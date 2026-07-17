@@ -24,6 +24,20 @@ export async function setVenueGeom(
   `;
 }
 
+export async function setUserHomeGeom(
+  tx: Prisma.TransactionClient,
+  userId: string,
+  lat: number,
+  lng: number,
+): Promise<void> {
+  // PostGIS points are longitude first, then latitude; reversing them is a common geo bug.
+  await tx.$executeRaw`
+    UPDATE users
+    SET home_geom = ST_SetSRID(ST_MakePoint(${lng}, ${lat}), 4326)::geography
+    WHERE id = ${userId}::uuid
+  `;
+}
+
 export async function venuesWithinRadius(
   lat: number,
   lng: number,
