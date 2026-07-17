@@ -1,0 +1,14 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+// Minimal placeholder model so Prisma Client can be generated before the domain schema is added.
+model Bootstrap {
+  id Int @id
+}

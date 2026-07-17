@@ -1,0 +1,5 @@
+{
+  "installCommand": "pnpm install",
+  "buildCommand": "pnpm --filter web build",
+  "rewrites": [{ "source": "/api/:path*", "destination": "/api/:path*" }]
+}
