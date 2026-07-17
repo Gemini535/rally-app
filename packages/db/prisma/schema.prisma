@@ -1,14 +1,415 @@
 generator client {
-  provider = "prisma-client-js"
+  provider        = "prisma-client-js"
+  previewFeatures = ["postgresqlExtensions"]
 }
 
 datasource db {
-  provider  = "postgresql"
-  url       = env("DATABASE_URL")
-  directUrl = env("DIRECT_URL")
+  provider   = "postgresql"
+  url        = env("DATABASE_URL")
+  directUrl  = env("DIRECT_URL")
+  extensions = [postgis]
 }
 
-// Minimal placeholder model so Prisma Client can be generated before the domain schema is added.
-model Bootstrap {
-  id Int @id
+enum SportSlug {
+  basketball
+  pickleball
+  tennis
+  soccer
+  volleyball
+  baseball
+  softball
+  running_track
+  golf_range
+  skate
+  football
+  handball
+}
+
+enum Sentiment {
+  LIKED
+  FINE
+  DISLIKED
+}
+
+enum SkillLevel {
+  BEGINNER
+  INTERMEDIATE
+  ADVANCED
+  ANY
+}
+
+enum GameType {
+  PICKUP
+  CASUAL
+  COMPETITIVE
+  DRILLS
+  LEAGUE
+  SOLO
+}
+
+enum Surface {
+  HARDWOOD
+  ASPHALT
+  CONCRETE
+  CLAY
+  GRASS
+  TURF
+  RUBBER
+  SAND
+  OTHER
+}
+
+enum EntryStatus {
+  RANKING
+  RANKED
+}
+
+enum SessionStatus {
+  ACTIVE
+  DONE
+}
+
+enum ActivityType {
+  RANKED_VENUE
+  CHECKED_IN
+  WANT_TO_TRY
+  FOLLOWED
+  REVIEWED
+}
+
+model User {
+  id          String                                @id @map("id") @db.Uuid
+  handle      String                                @unique @map("handle")
+  displayName String                                @map("display_name")
+  avatarUrl   String?                               @map("avatar_url")
+  bio         String?                               @map("bio")
+  homeCity    String                                @default("Chicago") @map("home_city")
+  homeLat     Float?                                @map("home_lat")
+  homeLng     Float?                                @map("home_lng")
+  homeGeom    Unsupported("geography(Point,4326)")? @map("home_geom")
+  isDemo      Boolean                               @default(false) @map("is_demo")
+  createdAt   DateTime                              @default(now()) @map("created_at")
+
+  userSports         UserSport[]
+  entries            Entry[]
+  comparisonSessions ComparisonSession[]
+  comparisons        Comparison[]
+  checkIns           CheckIn[]
+  reviews            Review[]
+  wantsToTry         WantToTry[]
+  createdVenues      Venue[]             @relation("VenueCreator")
+  followerFollows    Follow[]            @relation("follower")
+  followeeFollows    Follow[]            @relation("followee")
+  affinitiesAsA      TasteAffinity[]     @relation("affinityA")
+  affinitiesAsB      TasteAffinity[]     @relation("affinityB")
+  activities         Activity[]          @relation("ActivityActor")
+  targetedActivities Activity[]          @relation("ActivityTargetUser")
+
+  @@map("users")
+}
+
+model UserSport {
+  id                 String     @id @default(uuid()) @map("id") @db.Uuid
+  userId             String     @map("user_id") @db.Uuid
+  sportId            String     @map("sport_id") @db.Uuid
+  skillLevel         SkillLevel @map("skill_level")
+  preferredGameTypes GameType[] @map("preferred_game_types")
+  isPrimary          Boolean    @map("is_primary")
+
+  user  User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  sport Sport @relation(fields: [sportId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, sportId])
+  @@map("user_sports")
+}
+
+model Sport {
+  id               String    @id @default(uuid()) @map("id") @db.Uuid
+  slug             SportSlug @unique @map("slug")
+  name             String    @map("name")
+  iconKey          String    @map("icon_key")
+  defaultIsOutdoor Boolean   @map("default_is_outdoor")
+  colorHex         String    @map("color_hex")
+
+  userSports         UserSport[]
+  venueSports        VenueSport[]
+  entries            Entry[]
+  comparisonSessions ComparisonSession[]
+  comparisons        Comparison[]
+  venueSportRatings  VenueSportRating[]
+  checkIns           CheckIn[]
+  reviews            Review[]
+  wantsToTry         WantToTry[]
+  tasteAffinities    TasteAffinity[]
+  activities         Activity[]
+
+  @@map("sports")
+}
+
+model Venue {
+  id                  String                                @id @default(uuid()) @map("id") @db.Uuid
+  osmId               String?                               @unique @map("osm_id")
+  name                String                                @map("name")
+  slug                String                                @unique @map("slug")
+  address             String?                               @map("address")
+  neighborhood        String?                               @map("neighborhood")
+  city                String                                @default("Chicago") @map("city")
+  state               String                                @default("IL") @map("state")
+  country             String                                @default("US") @map("country")
+  lat                 Float                                 @map("lat")
+  lng                 Float                                 @map("lng")
+  geom                Unsupported("geography(Point,4326)")? @map("geom")
+  isIndoor            Boolean                               @default(false) @map("is_indoor")
+  isFree              Boolean                               @default(false) @map("is_free")
+  requiresReservation Boolean                               @default(false) @map("requires_reservation")
+  hasLights           Boolean                               @default(false) @map("has_lights")
+  hasParking          Boolean                               @default(false) @map("has_parking")
+  hasRestrooms        Boolean                               @default(false) @map("has_restrooms")
+  hasWater            Boolean                               @default(false) @map("has_water")
+  photoUrl            String?                               @map("photo_url")
+  source              String                                @default("osm") @map("source")
+  createdById         String?                               @map("created_by_id") @db.Uuid
+  createdAt           DateTime                              @default(now()) @map("created_at")
+  updatedAt           DateTime                              @updatedAt @map("updated_at")
+
+  createdBy         User?              @relation("VenueCreator", fields: [createdById], references: [id], onDelete: SetNull)
+  venueSports       VenueSport[]
+  entries           Entry[]
+  venueSportRatings VenueSportRating[]
+  checkIns          CheckIn[]
+  reviews           Review[]
+  wantsToTry        WantToTry[]
+  activities        Activity[]
+
+  @@index([city])
+  @@index([lat, lng])
+  @@map("venues")
+}
+
+model VenueSport {
+  id             String   @id @default(uuid()) @map("id") @db.Uuid
+  venueId        String   @map("venue_id") @db.Uuid
+  sportId        String   @map("sport_id") @db.Uuid
+  courtCount     Int      @default(1) @map("court_count")
+  surface        Surface? @map("surface")
+  conditionScore Int?     @map("condition_score")
+  conditionNotes String?  @map("condition_notes")
+  isLit          Boolean? @map("is_lit")
+  updatedAt      DateTime @updatedAt @map("updated_at")
+
+  venue Venue @relation(fields: [venueId], references: [id], onDelete: Cascade)
+  sport Sport @relation(fields: [sportId], references: [id], onDelete: Cascade)
+
+  @@unique([venueId, sportId])
+  @@index([sportId])
+  @@map("venue_sports")
+}
+
+model Entry {
+  id           String      @id @default(uuid()) @map("id") @db.Uuid
+  userId       String      @map("user_id") @db.Uuid
+  venueId      String      @map("venue_id") @db.Uuid
+  sportId      String      @map("sport_id") @db.Uuid
+  sentiment    Sentiment   @map("sentiment")
+  rallyScore   Decimal?    @map("rally_score") @db.Decimal(3, 1)
+  rankPosition Int?        @map("rank_position")
+  status       EntryStatus @default(RANKING) @map("status")
+  note         String?     @map("note")
+  tags         String[]    @map("tags")
+  playedAt     DateTime    @map("played_at")
+  createdAt    DateTime    @default(now()) @map("created_at")
+  updatedAt    DateTime    @updatedAt @map("updated_at")
+
+  user                User                @relation(fields: [userId], references: [id], onDelete: Cascade)
+  venue               Venue               @relation(fields: [venueId], references: [id], onDelete: Cascade)
+  sport               Sport               @relation(fields: [sportId], references: [id], onDelete: Cascade)
+  subjectSessions     ComparisonSession[] @relation("SessionSubjectEntry")
+  subjectComparisons  Comparison[]        @relation("ComparisonSubjectEntry")
+  opponentComparisons Comparison[]        @relation("ComparisonOpponentEntry")
+  winningComparisons  Comparison[]        @relation("ComparisonWinnerEntry")
+  activities          Activity[]
+
+  @@unique([userId, venueId, sportId])
+  @@index([userId, sportId, rankPosition])
+  @@index([venueId, sportId])
+  @@index([userId, sportId, status])
+  @@map("entries")
+}
+
+model ComparisonSession {
+  id             String        @id @default(uuid()) @map("id") @db.Uuid
+  userId         String        @map("user_id") @db.Uuid
+  sportId        String        @map("sport_id") @db.Uuid
+  subjectEntryId String        @map("subject_entry_id") @db.Uuid
+  lo             Int           @map("lo")
+  hi             Int           @map("hi")
+  step           Int           @default(0) @map("step")
+  maxSteps       Int           @map("max_steps")
+  status         SessionStatus @default(ACTIVE) @map("status")
+  createdAt      DateTime      @default(now()) @map("created_at")
+  completedAt    DateTime?     @map("completed_at")
+
+  user         User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  sport        Sport        @relation(fields: [sportId], references: [id], onDelete: Cascade)
+  subjectEntry Entry        @relation("SessionSubjectEntry", fields: [subjectEntryId], references: [id], onDelete: Cascade)
+  comparisons  Comparison[]
+
+  @@map("comparison_sessions")
+}
+
+model Comparison {
+  id              String   @id @default(uuid()) @map("id") @db.Uuid
+  sessionId       String?  @map("session_id") @db.Uuid
+  userId          String   @map("user_id") @db.Uuid
+  sportId         String   @map("sport_id") @db.Uuid
+  subjectEntryId  String   @map("subject_entry_id") @db.Uuid
+  opponentEntryId String   @map("opponent_entry_id") @db.Uuid
+  winnerEntryId   String?  @map("winner_entry_id") @db.Uuid
+  positionIndex   Int      @map("position_index")
+  createdAt       DateTime @default(now()) @map("created_at")
+
+  session       ComparisonSession? @relation(fields: [sessionId], references: [id], onDelete: SetNull)
+  user          User               @relation(fields: [userId], references: [id], onDelete: Cascade)
+  sport         Sport              @relation(fields: [sportId], references: [id], onDelete: Cascade)
+  subjectEntry  Entry              @relation("ComparisonSubjectEntry", fields: [subjectEntryId], references: [id], onDelete: Cascade)
+  opponentEntry Entry              @relation("ComparisonOpponentEntry", fields: [opponentEntryId], references: [id], onDelete: Cascade)
+  winnerEntry   Entry?             @relation("ComparisonWinnerEntry", fields: [winnerEntryId], references: [id], onDelete: Cascade)
+
+  @@index([userId, sportId, createdAt])
+  @@index([subjectEntryId])
+  @@map("comparisons")
+}
+
+model VenueSportRating {
+  venueId       String   @map("venue_id") @db.Uuid
+  sportId       String   @map("sport_id") @db.Uuid
+  elo           Decimal  @default(1500) @map("elo") @db.Decimal(7, 2)
+  nComparisons  Int      @default(0) @map("n_comparisons")
+  avgRallyScore Decimal? @map("avg_rally_score") @db.Decimal(3, 1)
+  nEntries      Int      @default(0) @map("n_entries")
+  updatedAt     DateTime @updatedAt @map("updated_at")
+
+  venue Venue @relation(fields: [venueId], references: [id], onDelete: Cascade)
+  sport Sport @relation(fields: [sportId], references: [id], onDelete: Cascade)
+
+  @@id([venueId, sportId])
+  @@index([sportId, elo(sort: Desc)])
+  @@map("venue_sport_ratings")
+}
+
+model CheckIn {
+  id         String     @id @default(uuid()) @map("id") @db.Uuid
+  userId     String     @map("user_id") @db.Uuid
+  venueId    String     @map("venue_id") @db.Uuid
+  sportId    String     @map("sport_id") @db.Uuid
+  startedAt  DateTime   @default(now()) @map("started_at")
+  expiresAt  DateTime   @map("expires_at")
+  endedAt    DateTime?  @map("ended_at")
+  headcount  Int        @map("headcount")
+  gameType   GameType   @map("game_type")
+  skillLevel SkillLevel @map("skill_level")
+  note       String?    @map("note")
+
+  user       User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  venue      Venue      @relation(fields: [venueId], references: [id], onDelete: Cascade)
+  sport      Sport      @relation(fields: [sportId], references: [id], onDelete: Cascade)
+  activities Activity[]
+
+  @@index([venueId, sportId, expiresAt(sort: Desc)])
+  @@index([userId, startedAt])
+  @@map("check_ins")
+}
+
+model Review {
+  id        String   @id @default(uuid()) @map("id") @db.Uuid
+  userId    String   @map("user_id") @db.Uuid
+  venueId   String   @map("venue_id") @db.Uuid
+  sportId   String   @map("sport_id") @db.Uuid
+  body      String   @map("body")
+  photos    String[] @map("photos")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  user  User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  venue Venue @relation(fields: [venueId], references: [id], onDelete: Cascade)
+  sport Sport @relation(fields: [sportId], references: [id], onDelete: Cascade)
+
+  @@index([venueId, createdAt(sort: Desc)])
+  @@map("reviews")
+}
+
+model Follow {
+  followerId String   @map("follower_id") @db.Uuid
+  followeeId String   @map("followee_id") @db.Uuid
+  createdAt  DateTime @default(now()) @map("created_at")
+
+  follower User @relation("follower", fields: [followerId], references: [id], onDelete: Cascade)
+  followee User @relation("followee", fields: [followeeId], references: [id], onDelete: Cascade)
+
+  @@id([followerId, followeeId])
+  @@index([followeeId])
+  @@map("follows")
+}
+
+model WantToTry {
+  id        String   @id @default(uuid()) @map("id") @db.Uuid
+  userId    String   @map("user_id") @db.Uuid
+  venueId   String   @map("venue_id") @db.Uuid
+  sportId   String   @map("sport_id") @db.Uuid
+  source    String?  @map("source")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  user  User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  venue Venue @relation(fields: [venueId], references: [id], onDelete: Cascade)
+  sport Sport @relation(fields: [sportId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, venueId, sportId])
+  @@map("want_to_try")
+}
+
+model TasteAffinity {
+  userAId    String   @map("user_a_id") @db.Uuid
+  userBId    String   @map("user_b_id") @db.Uuid
+  sportId    String   @map("sport_id") @db.Uuid
+  tau        Decimal  @map("tau") @db.Decimal(4, 3)
+  overlapN   Int      @map("overlap_n")
+  computedAt DateTime @default(now()) @map("computed_at")
+
+  userA User  @relation("affinityA", fields: [userAId], references: [id], onDelete: Cascade)
+  userB User  @relation("affinityB", fields: [userBId], references: [id], onDelete: Cascade)
+  sport Sport @relation(fields: [sportId], references: [id], onDelete: Cascade)
+
+  @@id([userAId, userBId, sportId])
+  @@map("taste_affinities")
+}
+
+model Activity {
+  id           String       @id @default(uuid()) @map("id") @db.Uuid
+  actorId      String       @map("actor_id") @db.Uuid
+  type         ActivityType @map("type")
+  venueId      String?      @map("venue_id") @db.Uuid
+  sportId      String?      @map("sport_id") @db.Uuid
+  entryId      String?      @map("entry_id") @db.Uuid
+  checkInId    String?      @map("check_in_id") @db.Uuid
+  targetUserId String?      @map("target_user_id") @db.Uuid
+  payload      Json         @map("payload")
+  createdAt    DateTime     @default(now()) @map("created_at")
+
+  actor      User     @relation("ActivityActor", fields: [actorId], references: [id], onDelete: Cascade)
+  venue      Venue?   @relation(fields: [venueId], references: [id], onDelete: SetNull)
+  sport      Sport?   @relation(fields: [sportId], references: [id], onDelete: SetNull)
+  entry      Entry?   @relation(fields: [entryId], references: [id], onDelete: SetNull)
+  checkIn    CheckIn? @relation(fields: [checkInId], references: [id], onDelete: SetNull)
+  targetUser User?    @relation("ActivityTargetUser", fields: [targetUserId], references: [id], onDelete: SetNull)
+
+  @@index([actorId, createdAt(sort: Desc)])
+  @@map("activities")
+}
+
+model WeatherCache {
+  id        String   @id @default(uuid()) @map("id") @db.Uuid
+  geohash   String   @unique @map("geohash")
+  payload   Json     @map("payload")
+  fetchedAt DateTime @default(now()) @map("fetched_at")
+
+  @@map("weather_cache")
 }
