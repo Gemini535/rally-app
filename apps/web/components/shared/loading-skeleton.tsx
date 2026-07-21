@@ -1,0 +1,3 @@
+export function VenueCardSkeleton() { return <div className="animate-pulse rounded-card border bg-rally-surface p-4"><div className="h-28 rounded-control bg-rally-elevated" /><div className="mt-3 h-4 w-2/3 rounded bg-rally-elevated" /><div className="mt-2 h-3 w-1/2 rounded bg-rally-elevated" /></div>; }
+export function FeedSkeleton() { return <div className="space-y-3">{[1,2,3].map((id) => <div key={id} className="h-24 animate-pulse rounded-card bg-rally-surface" />)}</div>; }
+export function ListSkeleton() { return <div className="space-y-2">{[1,2,3,4].map((id) => <div key={id} className="h-14 animate-pulse rounded-card bg-rally-surface" />)}</div>; }

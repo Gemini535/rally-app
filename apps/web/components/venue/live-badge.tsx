@@ -1,0 +1,1 @@
+export function LiveBadge({ count, gameType }: { count: number; gameType?: string | null }) { return count > 0 ? <span className="inline-flex items-center gap-1.5 rounded-full bg-rose-500/10 px-2 py-1 text-xs text-rose-300"><span className="size-2 animate-pulse rounded-full bg-rose-400" />{count} here now{gameType && <span>· {gameType.toLowerCase()}</span>}</span> : null; }

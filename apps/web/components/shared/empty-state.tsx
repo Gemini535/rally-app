@@ -1,0 +1,2 @@
+import type { ReactNode } from 'react';
+export function EmptyState({ icon, headline, body, cta }: { icon: ReactNode; headline: string; body: string; cta?: ReactNode }) { return <div className="rounded-card border border-dashed border-rally-border p-8 text-center"><div className="mx-auto mb-3 text-rally-tertiary">{icon}</div><h2 className="font-semibold">{headline}</h2><p className="mt-1 text-sm text-rally-secondary">{body}</p>{cta && <div className="mt-4">{cta}</div>}</div>; }

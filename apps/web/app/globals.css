@@ -3,8 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-  :root { --background: 0 0% 100%; --foreground: 222.2 84% 4.9%; }
-  .dark { --background: 222.2 84% 4.9%; --foreground: 210 40% 98%; }
-  * { @apply border-slate-200 dark:border-slate-800; }
-  body { @apply bg-white text-slate-950 dark:bg-slate-950 dark:text-slate-50; }
+  :root { --sport-accent: #F97316; }
+  * { @apply border-rally-border; }
+  body { @apply bg-rally-base text-rally-primary; }
 }

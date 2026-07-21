@@ -3,12 +3,18 @@
 import type { ZodType } from 'zod';
 import { ApiErrorSchema } from '@rally/shared';
 import { createClient } from '@/lib/supabase/client';
+import { mockVenues } from '@/lib/mocks/venues';
 
 export class ApiError extends Error {
   constructor(public readonly code: string, message: string, public readonly details?: unknown) { super(message); }
 }
 
 async function request<T>(method: string, path: string, body?: unknown, schema?: ZodType<T>) {
+  if (process.env.NEXT_PUBLIC_USE_MOCKS === 'true') {
+    await new Promise((resolve) => setTimeout(resolve, 200));
+    const payload: unknown = path.startsWith('/feed/recommended') ? { items: mockVenues, weights: { personal: .35, social: .25, proximity: .2, live: .2 } } : null;
+    return schema ? schema.parse(payload) : payload as T;
+  }
   const { data: { session } } = await createClient().auth.getSession();
   const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL ?? '/api'}${path}`, {
     method, headers: { 'Content-Type': 'application/json', ...(session?.access_token ? { Authorization: `Bearer ${session.access_token}` } : {}) },

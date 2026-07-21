@@ -7,10 +7,11 @@ const authPaths = ['/login', '/signup'];
 export async function middleware(request: NextRequest) {
   const { response, supabase, user } = await updateSession(request);
   const { pathname } = request.nextUrl;
+  if (!supabase) return response;
   const protectedRoute = protectedPaths.includes(pathname) || pathname.startsWith('/log/');
-  if (!user && protectedRoute) return NextResponse.redirect(new URL('/login', request.url));
+  if (!user && protectedRoute && process.env.NEXT_PUBLIC_USE_MOCKS !== 'true') return NextResponse.redirect(new URL('/login', request.url));
   if (user && authPaths.includes(pathname)) return NextResponse.redirect(new URL('/', request.url));
-  if (user && protectedRoute && pathname !== '/onboarding') {
+  if (user && supabase && protectedRoute && pathname !== '/onboarding') {
     const { data } = await supabase.from('user_sports').select('id').eq('user_id', user.id).limit(1);
     if (data?.length === 0) return NextResponse.redirect(new URL('/onboarding', request.url));
   }

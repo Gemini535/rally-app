@@ -20,12 +20,6 @@
       "@/*": [
         "./*"
       ],
-      "@rally/shared": [
-        "../../packages/shared/src"
-      ],
-      "@rally/db": [
-        "../../packages/db/src"
-      ]
     },
     "isolatedModules": true
   },
