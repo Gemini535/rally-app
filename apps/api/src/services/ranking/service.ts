@@ -52,11 +52,18 @@ export async function createEntryAndSession(userId: string, venueId: string, spo
       create: { userId, venueId, sportId: sport.id, sentiment, status: 'RANKING', note: options.note, tags: options.tags ?? [], playedAt: options.playedAt ?? new Date() },
       update: { sentiment, status: 'RANKING', rallyScore: null, rankPosition: null, note: options.note, tags: options.tags ?? [], playedAt: options.playedAt ?? new Date() },
     });
-    const band = await tx.entry.findMany({ where: { userId, sportId: sport.id, sentiment, status: 'RANKED', id: { not: entry.id } }, orderBy: { rankPosition: 'asc' } });
+    const band = await tx.entry.findMany({ where: { userId, sportId: sport.id, sentiment, status: 'RANKED', id: { not: entry.id } }, orderBy: { rankPosition: 'asc' }, include: { venue: true } });
     const session = await tx.comparisonSession.create({ data: { userId, sportId: sport.id, subjectEntryId: entry.id, lo: 0, hi: band.length, maxSteps: maxSteps(band.length) } });
     if (session.maxSteps === 0) await finalizeSession(tx, session.id);
-    return { entry, session: await tx.comparisonSession.findUniqueOrThrow({ where: { id: session.id } }) };
-  });
+    const mid = nextComparisonIndex(session.lo, session.hi);
+    const opponent = mid === null ? undefined : band[mid];
+    return {
+      entry,
+      session: await tx.comparisonSession.findUniqueOrThrow({ where: { id: session.id } }),
+      nextPair: opponent ? { opponentEntryId: opponent.id, opponent: opponent.venue } : null,
+    };
+  // Creating an entry can immediately finalize a band; allow for Supabase round-trip latency.
+  }, { maxWait: 10_000, timeout: 20_000 });
 }
 
 export async function submitComparison(userId: string, sessionId: string, winnerEntryId: string | null) {

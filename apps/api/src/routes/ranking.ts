@@ -10,6 +10,13 @@ import { abandonSession, createEntryAndSession, deleteEntry, getUserList, submit
 const rankingRouter: RouterType = Router();
 const SportQuery = { query: z.object({ sport: SportSlugSchema }) };
 const routeParam = (value: string | string[]) => Array.isArray(value) ? value[0] : value;
+const listResponse = (list: Awaited<ReturnType<typeof getUserList>>) => ({
+  entries: list.entries.map((entry) => ({
+    id: entry.id, sentiment: entry.sentiment, rallyScore: entry.rallyScore === null ? null : Number(entry.rallyScore), rankPosition: entry.rankPosition,
+    venue: { id: entry.venue.id, slug: entry.venue.slug, name: entry.venue.name, neighborhood: entry.venue.neighborhood, city: entry.venue.city, photoUrl: entry.venue.photoUrl },
+  })),
+  bandCounts: list.bandCounts,
+});
 
 rankingRouter.post('/entries', requireAuth, validate({ body: CreateEntryBody }), asyncHandler(async (request, response) => {
   const body = request.body as typeof CreateEntryBody._output;
@@ -34,13 +41,13 @@ rankingRouter.post('/comparisons/session/:id/abandon', requireAuth, asyncHandler
 }));
 
 rankingRouter.get('/me/list', requireAuth, validate(SportQuery), asyncHandler(async (request, response) => {
-  response.json(await getUserList(request.user!.id, request.query.sport as SportSlug));
+  response.json(listResponse(await getUserList(request.user!.id, request.query.sport as SportSlug)));
 }));
 
 rankingRouter.get('/users/:handle/list', optionalAuth, validate(SportQuery), asyncHandler(async (request, response) => {
   const user = await prisma.user.findUnique({ where: { handle: routeParam(request.params.handle) } });
   if (!user) throw notFound('User not found.');
-  response.json(await getUserList(user.id, request.query.sport as SportSlug));
+  response.json(listResponse(await getUserList(user.id, request.query.sport as SportSlug)));
 }));
 
 rankingRouter.delete('/entries/:id', requireAuth, asyncHandler(async (request, response) => {

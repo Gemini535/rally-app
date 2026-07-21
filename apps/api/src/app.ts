@@ -7,6 +7,8 @@ import pinoHttp from 'pino-http';
 import meRouter from './routes/me.js';
 import { errorHandler, notFound } from './middleware/error.js';
 import rankingRouter from './routes/ranking.js';
+import communityRouter from './routes/community.js';
+import discoveryRouter from './routes/discovery.js';
 
 const app: Express = express();
 const logger = pino({ enabled: process.env.NODE_ENV !== 'test' });
@@ -22,6 +24,8 @@ app.get('/api/health', (_request, response) => {
 });
 app.use('/api/me', meRouter);
 app.use('/api', rankingRouter);
+app.use('/api', communityRouter);
+app.use('/api', discoveryRouter);
 app.use('/api', (_request, _response, next) => next(notFound('API route not found.')));
 app.use(errorHandler);
 

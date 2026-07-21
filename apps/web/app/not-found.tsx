@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export default function NotFound() { return <main className="grid min-h-dvh place-items-center p-6 text-center"><section><p className="text-4xl">⌁</p><h1 className="mt-4 text-2xl font-semibold">No court here</h1><p className="mt-2 text-rally-secondary">This venue or player may have moved on.</p><Link href="/" className="mt-6 inline-flex min-h-11 items-center rounded-control bg-emerald-400 px-5 font-semibold text-black">Back to the map</Link></section></main>; }

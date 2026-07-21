@@ -7,12 +7,13 @@ import { SlidersHorizontal, X } from 'lucide-react';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import type { SportSlug, VenueCard as Venue } from '@rally/shared';
 import { api } from '@/lib/api-client';
-import { MapCanvas } from '@/components/map/map-canvas';
+import dynamicImport from 'next/dynamic';
 import { VenueCard } from '@/components/venue/venue-card';
 import { VenueCardSkeleton } from '@/components/shared/loading-skeleton';
 import { EmptyState } from '@/components/shared/empty-state';
 
 const sports: SportSlug[] = ['basketball', 'pickleball', 'tennis', 'soccer', 'volleyball', 'baseball', 'softball', 'running_track', 'golf_range', 'skate', 'football', 'handball'];
+const MapCanvas = dynamicImport(() => import('@/components/map/map-canvas').then((module) => module.MapCanvas), { ssr: false, loading: () => <div className="h-full w-full animate-pulse bg-rally-elevated" aria-label="Loading map" /> });
 const chicago = { lat: 41.8781, lng: -87.6298 };
 type Filters = { indoor: boolean; free: boolean; lights: boolean };
 
@@ -27,7 +28,7 @@ export default function MapHome() {
   const venues = useMemo(() => (query.data?.items ?? []).filter((venue) => !playable || Boolean(venue.live?.activeCount)).sort((a, b) => (b.reco?.rallyScore ?? 0) - (a.reco?.rallyScore ?? 0)), [playable, query.data]);
   const chooseVenue = (venue: Venue) => { setSelected(venue.id); setSnap(0.55); requestAnimationFrame(() => cardRefs.current[venue.id]?.scrollIntoView({ behavior: 'smooth', block: 'nearest' })); };
   const activeFilters = Number(filters.indoor) + Number(filters.free) + Number(filters.lights);
-  const list = <VenueList venues={venues} loading={query.isLoading} selected={selected} onSelect={chooseVenue} cardRefs={cardRefs} onWiden={() => setState({ radius: 15 })} />;
+  const list = query.isError ? <EmptyState icon="!" headline="Couldn’t load nearby courts" body={query.error instanceof Error ? query.error.message : 'Try again in a moment.'} /> : <VenueList venues={venues} loading={query.isLoading} selected={selected} onSelect={chooseVenue} cardRefs={cardRefs} onWiden={() => setState({ radius: 15 })} />;
   return <main className="h-dvh overflow-hidden bg-rally-base lg:grid lg:grid-cols-[minmax(0,1fr)_440px]"><section className="relative min-h-0"><MapCanvas venues={venues} selected={selected} onSelect={chooseVenue} center={position} /><TopBar sport={sport} setSport={(value) => setState({ sport: value })} playable={playable} setPlayable={(value) => setState({ playableNow: value })} liveCount={venues.filter((venue) => venue.live?.activeCount).length} activeFilters={activeFilters} onFilters={() => setFilterOpen(true)} />{usingHome ? <p className="absolute bottom-4 left-4 rounded-control border border-rally-border bg-rally-surface/95 px-3 py-2 text-xs text-rally-secondary lg:bottom-auto lg:top-16">Using your home area</p> : null}</section><aside className="hidden min-h-0 overflow-y-auto border-l border-rally-border bg-rally-base p-3 lg:block">{list}</aside><Drawer.Root open={filterOpen} onOpenChange={setFilterOpen}><Drawer.Portal><Drawer.Overlay className="fixed inset-0 z-40 bg-black/55" /><Drawer.Content className="fixed inset-x-0 bottom-0 z-50 rounded-t-card border border-rally-border bg-rally-surface p-5"><FilterSheet radius={radius} filters={filters} setState={setState} onClose={() => setFilterOpen(false)} /></Drawer.Content></Drawer.Portal></Drawer.Root><Drawer.Root modal={false} snapPoints={[0.12, 0.55, 0.92]} activeSnapPoint={snap} setActiveSnapPoint={setSnap}><Drawer.Portal><Drawer.Content className="fixed inset-x-0 bottom-0 z-30 h-[92dvh] rounded-t-card border border-rally-border bg-rally-base outline-none lg:hidden"><div className="mx-auto my-3 h-1.5 w-12 rounded-full bg-rally-tertiary" /><div className="h-[calc(100%-36px)] overflow-y-auto px-3 pb-5">{list}</div></Drawer.Content></Drawer.Portal></Drawer.Root></main>;
 }
 

@@ -6,6 +6,7 @@ import {
 
 const IsoDateTimeSchema = z.string().datetime();
 const NullableNumberSchema = z.number().nullable();
+const PhotoUrlSchema = z.string().url().or(z.string().startsWith('/'));
 
 export const UserMiniSchema = z.object({
   id: z.string().uuid(), handle: z.string(), displayName: z.string(), avatarUrl: z.string().url().nullable(),
@@ -19,7 +20,7 @@ export const UserProfileSchema = UserMiniSchema.extend({
 });
 
 export const VenueMiniSchema = z.object({
-  id: z.string().uuid(), slug: z.string(), name: z.string(), neighborhood: z.string().nullable(), city: z.string(), photoUrl: z.string().url().nullable(),
+  id: z.string().uuid(), slug: z.string(), name: z.string(), neighborhood: z.string().nullable(), city: z.string(), photoUrl: PhotoUrlSchema.nullable(),
 });
 
 export const LiveStatusSchema = z.object({
@@ -86,6 +87,11 @@ export const LeaderboardRowSchema = z.object({
   confidenceScore: z.number(), nComparisons: z.number().int().nonnegative(), avgRallyScore: z.number().nullable(), nEntries: z.number().int().nonnegative(),
 });
 
+export const AffinityExplanationSchema = z.object({
+  tau: z.number().min(-1).max(1), overlapN: z.number().int().nonnegative(),
+  points: z.array(z.object({ venue: VenueMiniSchema, mineRank: z.number().int().positive(), theirRank: z.number().int().positive() })),
+});
+
 export type UserMini = z.infer<typeof UserMiniSchema>;
 export type UserProfile = z.infer<typeof UserProfileSchema>;
 export type VenueMini = z.infer<typeof VenueMiniSchema>;
@@ -100,3 +106,4 @@ export type CheckIn = z.infer<typeof CheckInSchema>;
 export type Review = z.infer<typeof ReviewSchema>;
 export type Activity = z.infer<typeof ActivitySchema>;
 export type LeaderboardRow = z.infer<typeof LeaderboardRowSchema>;
+export type AffinityExplanation = z.infer<typeof AffinityExplanationSchema>;

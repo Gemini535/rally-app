@@ -22,7 +22,10 @@ function toProfile(user: ProfileUser) {
 meRouter.get('/', requireAuth, asyncHandler(async (request, response) => {
   const user = await prisma.user.findUnique({ where: { id: request.user!.id }, include: { userSports: { include: { sport: true } }, followerFollows: true, followeeFollows: true } });
   if (!user) throw notFound('Complete signup to create your Rally profile.');
-  response.json({ user: toProfile(user) });
+  const profile = toProfile(user);
+  const primarySportId = user.userSports.find((item) => item.isPrimary)?.sportId ?? user.userSports[0]?.sportId;
+  const entries = primarySportId ? await prisma.entry.findMany({ where: { userId: user.id, sportId: primarySportId, status: 'RANKED' }, include: { venue: true }, orderBy: { rankPosition: 'asc' } }) : [];
+  response.json({ user: { ...profile, entries: entries.map((entry) => ({ id: entry.id, sentiment: entry.sentiment, rallyScore: entry.rallyScore === null ? null : Number(entry.rallyScore), rankPosition: entry.rankPosition, venue: { id: entry.venue.id, name: entry.venue.name, neighborhood: entry.venue.neighborhood } })) } });
 }));
 
 meRouter.post('/', requireAuth, validate({ body: UpdateMeBody.pick({ handle: true, displayName: true }) }), asyncHandler(async (request, response) => {
