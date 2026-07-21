@@ -4,6 +4,15 @@
 Build apps/web/app/(app)/venue/[id]/page.tsx. An RSC shell fetching VenueDetail server-side (fast first
 paint, good OG tags), with client components for the interactive parts.
 
+Two corrections before you build:
+- ReviewList (section 7): nothing in Tasks 9-14 ever creates a review, so this section can only render
+  its EmptyState, forever. Either cut it, or source it from entries with a non-null note for this
+  venue (the note captured in Task 13) and title it "Notes from players". Do not ship a permanently
+  empty section.
+- PlayabilityBanner: services/weather.ts and playabilityGate are already implemented and return
+  { multiplier, reason } with reason: string | null. Render from that exact shape; do not invent a
+  new one or re-fetch Open-Meteo from the client.
+
 Sections, in this order (the order is the argument the page makes):
 1. VenueHero — photo with a bottom gradient, name, neighborhood, sport chips, distance, back button.
 2. PlayabilityBanner — only when gateReason is non-null OR the venue is outdoor. Weather icon, temp, and

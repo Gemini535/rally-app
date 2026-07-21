@@ -7,6 +7,16 @@ Build apps/web/app/(app)/log/[venueId]/page.tsx — the Beli-style ranking flow.
 important screen in the product. It must feel fast, obvious, and satisfying. Every tap under 100ms
 perceived. No layout shift between comparisons.
 
+Contract preconditions — verify all three before writing the state machine:
+- POST /api/comparisons takes { sessionId, winnerEntryId }. The committed SubmitComparisonBody has
+  opponentEntryId and no sessionId; Task 9 is supposed to add it. Confirm it landed.
+- The DETAILS step PATCHes the entry. Task 9 adds UpdateEntryBody and PATCH /api/entries/:id.
+  Confirm both exist. If the PATCH was skipped, do NOT drop the note and tags — CreateEntryBody
+  already carries both, so instead move DETAILS to be the FIRST step and send them on the initial
+  POST /api/entries.
+- CreateEntryBody requires playedAt (ISO datetime). The SENTIMENT screen never asks for a date, so
+  default it to new Date().toISOString() at submit time or the POST fails validation.
+
 A client-side state machine (useReducer, explicit states — do NOT do this with a pile of booleans):
   SENTIMENT -> COMPARING -> DETAILS -> REVEAL -> done
 

@@ -3,6 +3,29 @@
 ```text
 Implement the remaining API routes, wiring to the services from Tasks 4 and 8.
 
+FIRST — fix these contract mismatches in packages/shared before writing any route. The committed
+schemas contradict this task and Tasks 11 and 13. Skip this and the frontend breaks at merge point 2.
+  - FeedQuery is currently { cursor, limit }, but Task 11 calls
+    /api/feed/recommended?lat&lng&sport&radius&playableNow. Add lat, lng (z.coerce.number, required),
+    sportSlug (SportSlugSchema), radiusMeters (default 5000, max 50000), playableNow
+    (OptionalBooleanSchema). Keep cursor/limit.
+  - SubmitComparisonBody is currently { opponentEntryId, winnerEntryId }, but this task and Task 13
+    both send { sessionId, winnerEntryId }. Add sessionId: z.string().uuid(). Keep opponentEntryId
+    only if the service genuinely needs it — otherwise drop it so the client contract is unambiguous.
+  - LeaderboardQuery uses friendsOnly: boolean; this task specifies scope=global|friends. Pick ONE
+    and make the route, the schema, and Task 14's ScopeToggle agree. Recommend keeping friendsOnly.
+  - There is no UpdateEntryBody and no PATCH /api/entries/:id, but Task 13's DETAILS step PATCHes the
+    entry with note + tags after comparisons finish. Add UpdateEntryBody { note?: string | null,
+    tags?: string[] } and PATCH /api/entries/:id (requireAuth, owner only) to the route list below.
+  - responses.ts has a single FeedResponseSchema but there are two different feeds. Split it into
+    FeedRecommendedResponseSchema (VenueCard[] + weights) and FeedSocialResponseSchema (paginated
+    Activity). Also add UserProfileResponseSchema and WantToTryResponseSchema — this task returns
+    both and neither exists.
+
+LAST — register every new router in apps/api/src/app.ts. It currently mounts only meRouter, and the
+catch-all notFound handler sits immediately after it, so any router you forget to mount 404s silently
+with no error at build time.
+
 --- services/recommend.ts ---
 getRecommendations({ viewerId, lat, lng, sportSlug, radiusMeters, playableNow, limit })
   1. Candidates: geo.searchVenues (max 200), filtered to sportSlug.

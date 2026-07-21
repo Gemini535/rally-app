@@ -3,6 +3,14 @@
 ```text
 Build the map home at apps/web/app/(app)/page.tsx — the app's front door and the first thing a judge sees.
 
+Preconditions: (app)/layout.tsx and QueryProvider exist from Task 10, and FeedQuery accepts
+lat/lng/sportSlug/radiusMeters/playableNow from Task 9. Verify the second one before you start — the
+committed FeedQuery is { cursor, limit } only, and if it was not widened every request here 400s.
+
+Degradation: if NEXT_PUBLIC_MAPBOX_TOKEN is missing or the GL context fails to initialise, render
+VenueList full-width with a muted "Map unavailable" panel rather than crashing the route. The list is
+the fallback demo path and must never depend on Mapbox succeeding.
+
 Layout:
 - Mobile: full-bleed Mapbox canvas + a draggable bottom sheet (vaul) with three snap points
   (peek 12% / half 55% / full 92%). Sheet content = the ranked VenueCard list.

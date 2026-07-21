@@ -3,6 +3,22 @@
 ```text
 Build Rally's design system and shared components in apps/web. Dark-first.
 
+--- Providers (do this FIRST — nothing downstream works without it) ---
+app/layout.tsx currently mounts only ThemeProvider. Tasks 11-14 all depend on TanStack Query and
+Task 15 depends on sonner toasts, and no task in this sequence owns that wiring. Create
+apps/web/lib/query.tsx exporting a 'use client' QueryProvider (QueryClient held in useState so it is
+per-request; defaults staleTime 30s, retry 2, refetchOnWindowFocus true), then mount <QueryProvider>
+and sonner's <Toaster /> inside ThemeProvider in the root layout.
+
+--- App shell (build it NOW, not in Task 14) ---
+Create apps/web/app/(app)/layout.tsx with the bottom tab bar (mobile) / left rail (desktop):
+Map · Feed · [+ Log] · Leaderboard · Profile. Task 14 fills in the destinations; this task only needs
+the shell to exist — because Tasks 11, 12 and 13 all build pages inside (app)/ and without it you
+cannot click from map to venue to log flow, which is precisely the demo path.
+Include a logout control (supabase.auth.signOut() then router.push('/login')). No task in the
+sequence builds one, and a judge who taps "Try as Marcus" currently cannot switch to Priya without
+manually clearing cookies.
+
 --- Design tokens (tailwind.config.ts + app/globals.css) ---
 - Dark by default via next-themes, no theme toggle (one less thing to break).
 - Background layers: base #0A0A0B, surface #141416, elevated #1C1C20, border #27272A.
