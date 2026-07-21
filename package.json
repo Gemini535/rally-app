@@ -9,6 +9,11 @@
     "lint": "turbo run lint",
     "typecheck": "turbo run typecheck",
     "test": "turbo run test"
+    ,"seed:venues:fetch": "tsx scripts/overpass-fetch.ts"
+    ,"seed:venues:normalize": "tsx scripts/normalize-venues.ts"
+    ,"seed": "tsx scripts/seed.ts"
+    ,"seed:reset": "tsx scripts/seed.ts --reset"
+    ,"seed:live": "tsx scripts/seed.ts --live-only"
   },
-  "devDependencies": { "prettier": "^3.5.3", "turbo": "^2.4.4", "typescript": "^5.7.3" }
+  "devDependencies": { "@turf/boolean-point-in-polygon": "^7.2.0", "@turf/helpers": "^7.2.0", "prettier": "^3.5.3", "tsx": "^4.19.3", "turbo": "^2.4.4", "typescript": "^5.7.3" }
 }
