@@ -6,12 +6,12 @@
 - [ ] Add live check-ins and recommendations
 - [ ] Deploy the web app and API adapter
 
-**Find the best courts. Know who's on them right now.**
+**The court that's right for *you*, and who's on it right now.**
 
-A Beli-style discovery and ranking app for recreational sports venues — basketball, pickleball,
-tennis, soccer, and more. Rank the places you play through head-to-head comparisons, see who's
-playing right now, and get recommendations blending your taste, your friends' taste, distance,
-and whether the weather will let you play.
+Apps like Fullcourt already show you which courts are busy. None of them can tell you which court
+*you'll* like, or whose opinion to trust. Rally ranks the places you play through Beli-style
+head-to-head comparisons, weights your friends by how much their taste actually matches yours, and
+folds in who's playing right now — into one recommendation that explains itself.
 
 🔗 **Live demo:** https://rally.vercel.app
 🎥 **Demo video:** <link>
@@ -23,25 +23,34 @@ and whether the weather will let you play.
 
 ## The problem
 
-Finding a place to play a pickup sport is unsolved:
-- **Discovery.** Google Maps knows a court exists. It doesn't know the rims have no nets, the surface
-  floods after rain, or which court has the good runs. Park district sites are asset inventories,
-  not recommendations.
-- **Liveness.** Pickup sport needs *other people*. Every existing tool is async. You drive 20 minutes
-  to an empty court, or to a 14-person waitlist.
-- **Taste.** "Best" is personal. A competitive 5-on-5 player and a parent teaching their kid to shoot
-  want opposite courts. A 4.3-star aggregate tells neither of them anything.
+A wave of apps now maps courts and shows live activity — Fullcourt, GoodRec, CourtRank, and others.
+They solved *discovery*. They didn't solve *judgment*:
+- **Trust.** Every one of them ranks courts by a crowd average — the same 4.2-vs-4.7 mush Beli killed
+  for restaurants. A competitive 5-on-5 player and a parent teaching their kid to shoot want opposite
+  courts. An aggregate rating tells neither of them anything, and it comes from strangers.
+- **Taste.** "Best" is personal. Nobody weights a recommendation by *whose* opinion should count for
+  *you* — the friend whose rankings have actually matched yours before.
+- **Explanation.** A busy-court dot tells you a court is full. It can't tell you *why you, specifically,*
+  should go there instead of the one two blocks away.
 
 ## The solution
 
-Rally is the first app to rank venues whose quality is a *live function of who's standing on them* —
-and to feed that liveness back into the ranking.
+Beli beat Yelp not on data — Yelp had 20 years and more reviews — but on **trust** (ratings from
+people you know) and **identity** (your list is who you are). Rally brings both to pickup sport. It's
+the only app that ranks courts to *your* taste, weights each friend by how much their taste actually
+correlates with yours, folds in who's there right now, and returns **one score that explains itself**.
 
 1. **Rank what you play.** Log a venue → answer up to 5 head-to-head comparisons → get a personal
    0–10 **Rally Score** and a position in your ranked list for that sport.
 2. **See who's there now.** Check in with headcount, game type, and skill level. Everyone nearby sees it.
-3. **Get told where to go.** The recommendation blends your taste, your friends' taste (weighted by how
-   much your rankings actually correlate), distance, live headcount, and a weather playability gate.
+3. **Get told where to go — and why.** The recommendation blends your taste, your friends' taste
+   (weighted by how much your rankings actually correlate), distance, live headcount, and a weather
+   playability gate — and every component comes back in the response, so the app can say *"7 here now,
+   and Dev — an 82% taste match — ranks it top-3."* No competitor computes that, so none can explain
+   itself.
+
+> **Positioning in one line:** Fullcourt is Rally's Yelp — more courts, more live dots, zero
+> personalization. We don't out-data them; we out-*trust* them, the same way Beli beat Yelp.
 
 ## Features
 
