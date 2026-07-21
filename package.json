@@ -11,6 +11,7 @@
     "test": "turbo run test"
     ,"seed:venues:fetch": "tsx scripts/overpass-fetch.ts"
     ,"seed:venues:normalize": "tsx scripts/normalize-venues.ts"
+    ,"seed:venues:placeholder": "tsx scripts/generate-placeholder-venues.ts"
     ,"seed": "tsx scripts/seed.ts"
     ,"seed:reset": "tsx scripts/seed.ts --reset"
     ,"seed:live": "tsx scripts/seed.ts --live-only"

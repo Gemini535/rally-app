@@ -1,0 +1,4502 @@
+[
+  {
+    "osmId": "placeholder:basketball:1",
+    "name": "Logan Square Park Basketball Courts",
+    "slug": "logan-square-basketball-1",
+    "lat": 41.923199999999994,
+    "lng": -87.7091,
+    "neighborhood": "Logan Square",
+    "address": "1200 N Milwaukee Ave",
+    "isIndoor": true,
+    "isFree": false,
+    "requiresReservation": true,
+    "hasLights": false,
+    "hasParking": true,
+    "hasRestrooms": false,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/basketball-02.jpg",
+    "sports": [
+      {
+        "slug": "basketball",
+        "courtCount": 2,
+        "surface": "HARDWOOD",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:basketball:2",
+    "name": "Bridgeport Athletic Center Basketball Courts",
+    "slug": "bridgeport-basketball-2",
+    "lat": 41.8346,
+    "lng": -87.6491,
+    "neighborhood": "Bridgeport",
+    "address": "1217 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/basketball-01.jpg",
+    "sports": [
+      {
+        "slug": "basketball",
+        "courtCount": 2,
+        "surface": "ASPHALT",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:basketball:3",
+    "name": "Bronzeville Park Basketball Courts",
+    "slug": "bronzeville-basketball-3",
+    "lat": 41.831,
+    "lng": -87.6211,
+    "neighborhood": "Bronzeville",
+    "address": "1234 S Halsted St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/basketball-02.jpg",
+    "sports": [
+      {
+        "slug": "basketball",
+        "courtCount": 2,
+        "surface": "ASPHALT",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:basketball:4",
+    "name": "Lakeview Athletic Center Basketball Courts",
+    "slug": "lakeview-basketball-4",
+    "lat": 41.946400000000004,
+    "lng": -87.6571,
+    "neighborhood": "Lakeview",
+    "address": "1251 N Clark St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": false,
+    "hasRestrooms": false,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/basketball-01.jpg",
+    "sports": [
+      {
+        "slug": "basketball",
+        "courtCount": 2,
+        "surface": "ASPHALT",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:basketball:5",
+    "name": "Avondale Park Basketball Courts",
+    "slug": "avondale-basketball-5",
+    "lat": 41.9438,
+    "lng": -87.7141,
+    "neighborhood": "Avondale",
+    "address": "1268 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/basketball-02.jpg",
+    "sports": [
+      {
+        "slug": "basketball",
+        "courtCount": 2,
+        "surface": "ASPHALT",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:basketball:6",
+    "name": "Beverly Athletic Center Basketball Courts",
+    "slug": "beverly-basketball-6",
+    "lat": 41.7142,
+    "lng": -87.676,
+    "neighborhood": "Beverly",
+    "address": "1285 W Division St",
+    "isIndoor": true,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/basketball-01.jpg",
+    "sports": [
+      {
+        "slug": "basketball",
+        "courtCount": 2,
+        "surface": "HARDWOOD",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:basketball:7",
+    "name": "Pilsen Park Basketball Courts",
+    "slug": "pilsen-basketball-7",
+    "lat": 41.8546,
+    "lng": -87.657,
+    "neighborhood": "Pilsen",
+    "address": "1302 S Halsted St",
+    "isIndoor": false,
+    "isFree": false,
+    "requiresReservation": true,
+    "hasLights": false,
+    "hasParking": true,
+    "hasRestrooms": false,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/basketball-02.jpg",
+    "sports": [
+      {
+        "slug": "basketball",
+        "courtCount": 2,
+        "surface": "ASPHALT",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:basketball:8",
+    "name": "Humboldt Park Athletic Center Basketball Courts",
+    "slug": "humboldt-park-basketball-8",
+    "lat": 41.902,
+    "lng": -87.702,
+    "neighborhood": "Humboldt Park",
+    "address": "1319 N Clark St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/basketball-01.jpg",
+    "sports": [
+      {
+        "slug": "basketball",
+        "courtCount": 2,
+        "surface": "ASPHALT",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:basketball:9",
+    "name": "Lincoln Park Park Basketball Courts",
+    "slug": "lincoln-park-basketball-9",
+    "lat": 41.9244,
+    "lng": -87.647,
+    "neighborhood": "Lincoln Park",
+    "address": "1336 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/basketball-02.jpg",
+    "sports": [
+      {
+        "slug": "basketball",
+        "courtCount": 2,
+        "surface": "ASPHALT",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:basketball:10",
+    "name": "Uptown Athletic Center Basketball Courts",
+    "slug": "uptown-basketball-10",
+    "lat": 41.970800000000004,
+    "lng": -87.658,
+    "neighborhood": "Uptown",
+    "address": "1353 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": false,
+    "hasRestrooms": false,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/basketball-02.jpg",
+    "sports": [
+      {
+        "slug": "basketball",
+        "courtCount": 2,
+        "surface": "ASPHALT",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:basketball:11",
+    "name": "Irving Park Park Basketball Courts",
+    "slug": "irving-park-basketball-11",
+    "lat": 41.9482,
+    "lng": -87.7269,
+    "neighborhood": "Irving Park",
+    "address": "1370 S Halsted St",
+    "isIndoor": true,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/basketball-01.jpg",
+    "sports": [
+      {
+        "slug": "basketball",
+        "courtCount": 2,
+        "surface": "HARDWOOD",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:basketball:12",
+    "name": "Hyde Park Athletic Center Basketball Courts",
+    "slug": "hyde-park-basketball-12",
+    "lat": 41.791599999999995,
+    "lng": -87.59089999999999,
+    "neighborhood": "Hyde Park",
+    "address": "1387 N Clark St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/basketball-02.jpg",
+    "sports": [
+      {
+        "slug": "basketball",
+        "courtCount": 2,
+        "surface": "ASPHALT",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:basketball:13",
+    "name": "Andersonville Park Basketball Courts",
+    "slug": "andersonville-basketball-13",
+    "lat": 41.981,
+    "lng": -87.6659,
+    "neighborhood": "Andersonville",
+    "address": "1404 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": false,
+    "requiresReservation": true,
+    "hasLights": false,
+    "hasParking": true,
+    "hasRestrooms": false,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/basketball-01.jpg",
+    "sports": [
+      {
+        "slug": "basketball",
+        "courtCount": 2,
+        "surface": "ASPHALT",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:basketball:14",
+    "name": "Wicker Park Athletic Center Basketball Courts",
+    "slug": "wicker-park-basketball-14",
+    "lat": 41.9104,
+    "lng": -87.6759,
+    "neighborhood": "Wicker Park",
+    "address": "1421 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/basketball-02.jpg",
+    "sports": [
+      {
+        "slug": "basketball",
+        "courtCount": 2,
+        "surface": "ASPHALT",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:basketball:15",
+    "name": "West Loop Park Basketball Courts",
+    "slug": "west-loop-basketball-15",
+    "lat": 41.887800000000006,
+    "lng": -87.64789999999999,
+    "neighborhood": "West Loop",
+    "address": "1438 S Halsted St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/basketball-01.jpg",
+    "sports": [
+      {
+        "slug": "basketball",
+        "courtCount": 2,
+        "surface": "ASPHALT",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:pickleball:1",
+    "name": "Hyde Park Park Pickleball Courts",
+    "slug": "hyde-park-pickleball-1",
+    "lat": 41.789199999999994,
+    "lng": -87.5971,
+    "neighborhood": "Hyde Park",
+    "address": "1200 N Milwaukee Ave",
+    "isIndoor": true,
+    "isFree": false,
+    "requiresReservation": true,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": false,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/pickleball-02.jpg",
+    "sports": [
+      {
+        "slug": "pickleball",
+        "courtCount": 4,
+        "surface": "HARDWOOD",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:pickleball:2",
+    "name": "Andersonville Athletic Center Pickleball Courts",
+    "slug": "andersonville-pickleball-2",
+    "lat": 41.9786,
+    "lng": -87.6721,
+    "neighborhood": "Andersonville",
+    "address": "1217 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/pickleball-01.jpg",
+    "sports": [
+      {
+        "slug": "pickleball",
+        "courtCount": 4,
+        "surface": "ASPHALT",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:pickleball:3",
+    "name": "Wicker Park Park Pickleball Courts",
+    "slug": "wicker-park-pickleball-3",
+    "lat": 41.908,
+    "lng": -87.6821,
+    "neighborhood": "Wicker Park",
+    "address": "1234 S Halsted St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/pickleball-02.jpg",
+    "sports": [
+      {
+        "slug": "pickleball",
+        "courtCount": 4,
+        "surface": "ASPHALT",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:pickleball:4",
+    "name": "West Loop Athletic Center Pickleball Courts",
+    "slug": "west-loop-pickleball-4",
+    "lat": 41.885400000000004,
+    "lng": -87.6541,
+    "neighborhood": "West Loop",
+    "address": "1251 N Clark St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": false,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/pickleball-01.jpg",
+    "sports": [
+      {
+        "slug": "pickleball",
+        "courtCount": 4,
+        "surface": "ASPHALT",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:pickleball:5",
+    "name": "South Loop Park Pickleball Courts",
+    "slug": "south-loop-pickleball-5",
+    "lat": 41.8628,
+    "lng": -87.6281,
+    "neighborhood": "South Loop",
+    "address": "1268 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/pickleball-02.jpg",
+    "sports": [
+      {
+        "slug": "pickleball",
+        "courtCount": 4,
+        "surface": "ASPHALT",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:pickleball:6",
+    "name": "Rogers Park Athletic Center Pickleball Courts",
+    "slug": "rogers-park-pickleball-6",
+    "lat": 42.0042,
+    "lng": -87.668,
+    "neighborhood": "Rogers Park",
+    "address": "1285 W Division St",
+    "isIndoor": true,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/pickleball-01.jpg",
+    "sports": [
+      {
+        "slug": "pickleball",
+        "courtCount": 4,
+        "surface": "HARDWOOD",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:pickleball:7",
+    "name": "Albany Park Park Pickleball Courts",
+    "slug": "albany-park-pickleball-7",
+    "lat": 41.9656,
+    "lng": -87.723,
+    "neighborhood": "Albany Park",
+    "address": "1302 S Halsted St",
+    "isIndoor": false,
+    "isFree": false,
+    "requiresReservation": true,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": false,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/pickleball-02.jpg",
+    "sports": [
+      {
+        "slug": "pickleball",
+        "courtCount": 4,
+        "surface": "ASPHALT",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:pickleball:8",
+    "name": "Logan Square Athletic Center Pickleball Courts",
+    "slug": "logan-square-pickleball-8",
+    "lat": 41.928,
+    "lng": -87.706,
+    "neighborhood": "Logan Square",
+    "address": "1319 N Clark St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/pickleball-01.jpg",
+    "sports": [
+      {
+        "slug": "pickleball",
+        "courtCount": 4,
+        "surface": "ASPHALT",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:pickleball:9",
+    "name": "Bridgeport Park Pickleball Courts",
+    "slug": "bridgeport-pickleball-9",
+    "lat": 41.839400000000005,
+    "lng": -87.646,
+    "neighborhood": "Bridgeport",
+    "address": "1336 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/pickleball-02.jpg",
+    "sports": [
+      {
+        "slug": "pickleball",
+        "courtCount": 4,
+        "surface": "ASPHALT",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:pickleball:10",
+    "name": "Bronzeville Athletic Center Pickleball Courts",
+    "slug": "bronzeville-pickleball-10",
+    "lat": 41.835800000000006,
+    "lng": -87.618,
+    "neighborhood": "Bronzeville",
+    "address": "1353 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": false,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/pickleball-02.jpg",
+    "sports": [
+      {
+        "slug": "pickleball",
+        "courtCount": 4,
+        "surface": "ASPHALT",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:pickleball:11",
+    "name": "Lakeview Park Pickleball Courts",
+    "slug": "lakeview-pickleball-11",
+    "lat": 41.9392,
+    "lng": -87.6509,
+    "neighborhood": "Lakeview",
+    "address": "1370 S Halsted St",
+    "isIndoor": true,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/pickleball-01.jpg",
+    "sports": [
+      {
+        "slug": "pickleball",
+        "courtCount": 4,
+        "surface": "HARDWOOD",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:pickleball:12",
+    "name": "Avondale Athletic Center Pickleball Courts",
+    "slug": "avondale-pickleball-12",
+    "lat": 41.9366,
+    "lng": -87.7079,
+    "neighborhood": "Avondale",
+    "address": "1387 N Clark St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/pickleball-02.jpg",
+    "sports": [
+      {
+        "slug": "pickleball",
+        "courtCount": 4,
+        "surface": "ASPHALT",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:pickleball:13",
+    "name": "Beverly Park Pickleball Courts",
+    "slug": "beverly-pickleball-13",
+    "lat": 41.719,
+    "lng": -87.6729,
+    "neighborhood": "Beverly",
+    "address": "1404 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": false,
+    "requiresReservation": true,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": false,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/pickleball-01.jpg",
+    "sports": [
+      {
+        "slug": "pickleball",
+        "courtCount": 4,
+        "surface": "ASPHALT",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:pickleball:14",
+    "name": "Pilsen Athletic Center Pickleball Courts",
+    "slug": "pilsen-pickleball-14",
+    "lat": 41.8594,
+    "lng": -87.6539,
+    "neighborhood": "Pilsen",
+    "address": "1421 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/pickleball-02.jpg",
+    "sports": [
+      {
+        "slug": "pickleball",
+        "courtCount": 4,
+        "surface": "ASPHALT",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:pickleball:15",
+    "name": "Humboldt Park Park Pickleball Courts",
+    "slug": "humboldt-park-pickleball-15",
+    "lat": 41.906800000000004,
+    "lng": -87.6989,
+    "neighborhood": "Humboldt Park",
+    "address": "1438 S Halsted St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/pickleball-01.jpg",
+    "sports": [
+      {
+        "slug": "pickleball",
+        "courtCount": 4,
+        "surface": "ASPHALT",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:tennis:1",
+    "name": "Avondale Park Tennis Courts",
+    "slug": "avondale-tennis-1",
+    "lat": 41.9342,
+    "lng": -87.7141,
+    "neighborhood": "Avondale",
+    "address": "1200 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": false,
+    "requiresReservation": true,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": false,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/tennis-02.jpg",
+    "sports": [
+      {
+        "slug": "tennis",
+        "courtCount": 4,
+        "surface": "ASPHALT",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:tennis:2",
+    "name": "Beverly Athletic Center Tennis Courts",
+    "slug": "beverly-tennis-2",
+    "lat": 41.7166,
+    "lng": -87.6791,
+    "neighborhood": "Beverly",
+    "address": "1217 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/tennis-01.jpg",
+    "sports": [
+      {
+        "slug": "tennis",
+        "courtCount": 4,
+        "surface": "ASPHALT",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:tennis:3",
+    "name": "Pilsen Park Tennis Courts",
+    "slug": "pilsen-tennis-3",
+    "lat": 41.857,
+    "lng": -87.6601,
+    "neighborhood": "Pilsen",
+    "address": "1234 S Halsted St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/tennis-02.jpg",
+    "sports": [
+      {
+        "slug": "tennis",
+        "courtCount": 4,
+        "surface": "ASPHALT",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:tennis:4",
+    "name": "Humboldt Park Athletic Center Tennis Courts",
+    "slug": "humboldt-park-tennis-4",
+    "lat": 41.9044,
+    "lng": -87.7051,
+    "neighborhood": "Humboldt Park",
+    "address": "1251 N Clark St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": false,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/tennis-01.jpg",
+    "sports": [
+      {
+        "slug": "tennis",
+        "courtCount": 4,
+        "surface": "ASPHALT",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:tennis:5",
+    "name": "Lincoln Park Park Tennis Courts",
+    "slug": "lincoln-park-tennis-5",
+    "lat": 41.9268,
+    "lng": -87.65010000000001,
+    "neighborhood": "Lincoln Park",
+    "address": "1268 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/tennis-02.jpg",
+    "sports": [
+      {
+        "slug": "tennis",
+        "courtCount": 4,
+        "surface": "ASPHALT",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:tennis:6",
+    "name": "Uptown Athletic Center Tennis Courts",
+    "slug": "uptown-tennis-6",
+    "lat": 41.9612,
+    "lng": -87.658,
+    "neighborhood": "Uptown",
+    "address": "1285 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/tennis-01.jpg",
+    "sports": [
+      {
+        "slug": "tennis",
+        "courtCount": 4,
+        "surface": "ASPHALT",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:tennis:7",
+    "name": "Irving Park Park Tennis Courts",
+    "slug": "irving-park-tennis-7",
+    "lat": 41.9506,
+    "lng": -87.73,
+    "neighborhood": "Irving Park",
+    "address": "1302 S Halsted St",
+    "isIndoor": false,
+    "isFree": false,
+    "requiresReservation": true,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": false,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/tennis-02.jpg",
+    "sports": [
+      {
+        "slug": "tennis",
+        "courtCount": 4,
+        "surface": "ASPHALT",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:tennis:8",
+    "name": "Hyde Park Athletic Center Tennis Courts",
+    "slug": "hyde-park-tennis-8",
+    "lat": 41.794,
+    "lng": -87.594,
+    "neighborhood": "Hyde Park",
+    "address": "1319 N Clark St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/tennis-01.jpg",
+    "sports": [
+      {
+        "slug": "tennis",
+        "courtCount": 4,
+        "surface": "ASPHALT",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:tennis:9",
+    "name": "Andersonville Park Tennis Courts",
+    "slug": "andersonville-tennis-9",
+    "lat": 41.9834,
+    "lng": -87.669,
+    "neighborhood": "Andersonville",
+    "address": "1336 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/tennis-02.jpg",
+    "sports": [
+      {
+        "slug": "tennis",
+        "courtCount": 4,
+        "surface": "ASPHALT",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:tennis:10",
+    "name": "Wicker Park Athletic Center Tennis Courts",
+    "slug": "wicker-park-tennis-10",
+    "lat": 41.912800000000004,
+    "lng": -87.679,
+    "neighborhood": "Wicker Park",
+    "address": "1353 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": false,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/tennis-02.jpg",
+    "sports": [
+      {
+        "slug": "tennis",
+        "courtCount": 4,
+        "surface": "ASPHALT",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:tennis:11",
+    "name": "West Loop Park Tennis Courts",
+    "slug": "west-loop-tennis-11",
+    "lat": 41.8782,
+    "lng": -87.64789999999999,
+    "neighborhood": "West Loop",
+    "address": "1370 S Halsted St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/tennis-01.jpg",
+    "sports": [
+      {
+        "slug": "tennis",
+        "courtCount": 4,
+        "surface": "ASPHALT",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:tennis:12",
+    "name": "South Loop Athletic Center Tennis Courts",
+    "slug": "south-loop-tennis-12",
+    "lat": 41.855599999999995,
+    "lng": -87.6219,
+    "neighborhood": "South Loop",
+    "address": "1387 N Clark St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/tennis-02.jpg",
+    "sports": [
+      {
+        "slug": "tennis",
+        "courtCount": 4,
+        "surface": "ASPHALT",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:tennis:13",
+    "name": "Rogers Park Park Tennis Courts",
+    "slug": "rogers-park-tennis-13",
+    "lat": 42.009,
+    "lng": -87.6649,
+    "neighborhood": "Rogers Park",
+    "address": "1404 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": false,
+    "requiresReservation": true,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": false,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/tennis-01.jpg",
+    "sports": [
+      {
+        "slug": "tennis",
+        "courtCount": 4,
+        "surface": "ASPHALT",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:tennis:14",
+    "name": "Albany Park Athletic Center Tennis Courts",
+    "slug": "albany-park-tennis-14",
+    "lat": 41.970400000000005,
+    "lng": -87.7199,
+    "neighborhood": "Albany Park",
+    "address": "1421 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/tennis-02.jpg",
+    "sports": [
+      {
+        "slug": "tennis",
+        "courtCount": 4,
+        "surface": "ASPHALT",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:tennis:15",
+    "name": "Logan Square Park Tennis Courts",
+    "slug": "logan-square-tennis-15",
+    "lat": 41.9328,
+    "lng": -87.7029,
+    "neighborhood": "Logan Square",
+    "address": "1438 S Halsted St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/tennis-01.jpg",
+    "sports": [
+      {
+        "slug": "tennis",
+        "courtCount": 4,
+        "surface": "ASPHALT",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:soccer:1",
+    "name": "South Loop Park Soccer Field",
+    "slug": "south-loop-soccer-1",
+    "lat": 41.853199999999994,
+    "lng": -87.6281,
+    "neighborhood": "South Loop",
+    "address": "1200 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": false,
+    "requiresReservation": true,
+    "hasLights": false,
+    "hasParking": true,
+    "hasRestrooms": false,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/soccer-02.jpg",
+    "sports": [
+      {
+        "slug": "soccer",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:soccer:2",
+    "name": "Rogers Park Athletic Center Soccer Field",
+    "slug": "rogers-park-soccer-2",
+    "lat": 42.0066,
+    "lng": -87.67110000000001,
+    "neighborhood": "Rogers Park",
+    "address": "1217 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/soccer-01.jpg",
+    "sports": [
+      {
+        "slug": "soccer",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:soccer:3",
+    "name": "Albany Park Park Soccer Field",
+    "slug": "albany-park-soccer-3",
+    "lat": 41.968,
+    "lng": -87.7261,
+    "neighborhood": "Albany Park",
+    "address": "1234 S Halsted St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/soccer-02.jpg",
+    "sports": [
+      {
+        "slug": "soccer",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:soccer:4",
+    "name": "Logan Square Athletic Center Soccer Field",
+    "slug": "logan-square-soccer-4",
+    "lat": 41.9304,
+    "lng": -87.7091,
+    "neighborhood": "Logan Square",
+    "address": "1251 N Clark St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": false,
+    "hasRestrooms": false,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/soccer-01.jpg",
+    "sports": [
+      {
+        "slug": "soccer",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:soccer:5",
+    "name": "Bridgeport Park Soccer Field",
+    "slug": "bridgeport-soccer-5",
+    "lat": 41.841800000000006,
+    "lng": -87.6491,
+    "neighborhood": "Bridgeport",
+    "address": "1268 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/soccer-02.jpg",
+    "sports": [
+      {
+        "slug": "soccer",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:soccer:6",
+    "name": "Bronzeville Athletic Center Soccer Field",
+    "slug": "bronzeville-soccer-6",
+    "lat": 41.8262,
+    "lng": -87.618,
+    "neighborhood": "Bronzeville",
+    "address": "1285 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/soccer-01.jpg",
+    "sports": [
+      {
+        "slug": "soccer",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:soccer:7",
+    "name": "Lakeview Park Soccer Field",
+    "slug": "lakeview-soccer-7",
+    "lat": 41.9416,
+    "lng": -87.654,
+    "neighborhood": "Lakeview",
+    "address": "1302 S Halsted St",
+    "isIndoor": false,
+    "isFree": false,
+    "requiresReservation": true,
+    "hasLights": false,
+    "hasParking": true,
+    "hasRestrooms": false,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/soccer-02.jpg",
+    "sports": [
+      {
+        "slug": "soccer",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:soccer:8",
+    "name": "Avondale Athletic Center Soccer Field",
+    "slug": "avondale-soccer-8",
+    "lat": 41.939,
+    "lng": -87.711,
+    "neighborhood": "Avondale",
+    "address": "1319 N Clark St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/soccer-01.jpg",
+    "sports": [
+      {
+        "slug": "soccer",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:soccer:9",
+    "name": "Beverly Park Soccer Field",
+    "slug": "beverly-soccer-9",
+    "lat": 41.7214,
+    "lng": -87.676,
+    "neighborhood": "Beverly",
+    "address": "1336 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/soccer-02.jpg",
+    "sports": [
+      {
+        "slug": "soccer",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:soccer:10",
+    "name": "Pilsen Athletic Center Soccer Field",
+    "slug": "pilsen-soccer-10",
+    "lat": 41.8618,
+    "lng": -87.657,
+    "neighborhood": "Pilsen",
+    "address": "1353 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": false,
+    "hasRestrooms": false,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/soccer-02.jpg",
+    "sports": [
+      {
+        "slug": "soccer",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:soccer:11",
+    "name": "Humboldt Park Park Soccer Field",
+    "slug": "humboldt-park-soccer-11",
+    "lat": 41.8972,
+    "lng": -87.6989,
+    "neighborhood": "Humboldt Park",
+    "address": "1370 S Halsted St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/soccer-01.jpg",
+    "sports": [
+      {
+        "slug": "soccer",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:soccer:12",
+    "name": "Lincoln Park Athletic Center Soccer Field",
+    "slug": "lincoln-park-soccer-12",
+    "lat": 41.919599999999996,
+    "lng": -87.6439,
+    "neighborhood": "Lincoln Park",
+    "address": "1387 N Clark St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/soccer-02.jpg",
+    "sports": [
+      {
+        "slug": "soccer",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:soccer:13",
+    "name": "Uptown Park Soccer Field",
+    "slug": "uptown-soccer-13",
+    "lat": 41.966,
+    "lng": -87.6549,
+    "neighborhood": "Uptown",
+    "address": "1404 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": false,
+    "requiresReservation": true,
+    "hasLights": false,
+    "hasParking": true,
+    "hasRestrooms": false,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/soccer-01.jpg",
+    "sports": [
+      {
+        "slug": "soccer",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:soccer:14",
+    "name": "Irving Park Athletic Center Soccer Field",
+    "slug": "irving-park-soccer-14",
+    "lat": 41.955400000000004,
+    "lng": -87.7269,
+    "neighborhood": "Irving Park",
+    "address": "1421 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/soccer-02.jpg",
+    "sports": [
+      {
+        "slug": "soccer",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:soccer:15",
+    "name": "Hyde Park Park Soccer Field",
+    "slug": "hyde-park-soccer-15",
+    "lat": 41.7988,
+    "lng": -87.59089999999999,
+    "neighborhood": "Hyde Park",
+    "address": "1438 S Halsted St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/soccer-01.jpg",
+    "sports": [
+      {
+        "slug": "soccer",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:volleyball:1",
+    "name": "Lincoln Park Park Volleyball Courts",
+    "slug": "lincoln-park-volleyball-1",
+    "lat": 41.917199999999994,
+    "lng": -87.65010000000001,
+    "neighborhood": "Lincoln Park",
+    "address": "1200 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": false,
+    "requiresReservation": true,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": false,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/volleyball-01.jpg",
+    "sports": [
+      {
+        "slug": "volleyball",
+        "courtCount": 2,
+        "surface": "SAND",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:volleyball:2",
+    "name": "Uptown Athletic Center Volleyball Courts",
+    "slug": "uptown-volleyball-2",
+    "lat": 41.9636,
+    "lng": -87.6611,
+    "neighborhood": "Uptown",
+    "address": "1217 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/volleyball-02.jpg",
+    "sports": [
+      {
+        "slug": "volleyball",
+        "courtCount": 2,
+        "surface": "SAND",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:volleyball:3",
+    "name": "Irving Park Park Volleyball Courts",
+    "slug": "irving-park-volleyball-3",
+    "lat": 41.953,
+    "lng": -87.73310000000001,
+    "neighborhood": "Irving Park",
+    "address": "1234 S Halsted St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/volleyball-01.jpg",
+    "sports": [
+      {
+        "slug": "volleyball",
+        "courtCount": 2,
+        "surface": "SAND",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:volleyball:4",
+    "name": "Hyde Park Athletic Center Volleyball Courts",
+    "slug": "hyde-park-volleyball-4",
+    "lat": 41.7964,
+    "lng": -87.5971,
+    "neighborhood": "Hyde Park",
+    "address": "1251 N Clark St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": false,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/volleyball-02.jpg",
+    "sports": [
+      {
+        "slug": "volleyball",
+        "courtCount": 2,
+        "surface": "SAND",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:volleyball:5",
+    "name": "Andersonville Park Volleyball Courts",
+    "slug": "andersonville-volleyball-5",
+    "lat": 41.985800000000005,
+    "lng": -87.6721,
+    "neighborhood": "Andersonville",
+    "address": "1268 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/volleyball-01.jpg",
+    "sports": [
+      {
+        "slug": "volleyball",
+        "courtCount": 2,
+        "surface": "SAND",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:volleyball:6",
+    "name": "Wicker Park Athletic Center Volleyball Courts",
+    "slug": "wicker-park-volleyball-6",
+    "lat": 41.9032,
+    "lng": -87.679,
+    "neighborhood": "Wicker Park",
+    "address": "1285 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/volleyball-02.jpg",
+    "sports": [
+      {
+        "slug": "volleyball",
+        "courtCount": 2,
+        "surface": "SAND",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:volleyball:7",
+    "name": "West Loop Park Volleyball Courts",
+    "slug": "west-loop-volleyball-7",
+    "lat": 41.8806,
+    "lng": -87.651,
+    "neighborhood": "West Loop",
+    "address": "1302 S Halsted St",
+    "isIndoor": false,
+    "isFree": false,
+    "requiresReservation": true,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": false,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/volleyball-01.jpg",
+    "sports": [
+      {
+        "slug": "volleyball",
+        "courtCount": 2,
+        "surface": "SAND",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:volleyball:8",
+    "name": "South Loop Athletic Center Volleyball Courts",
+    "slug": "south-loop-volleyball-8",
+    "lat": 41.858,
+    "lng": -87.625,
+    "neighborhood": "South Loop",
+    "address": "1319 N Clark St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/volleyball-02.jpg",
+    "sports": [
+      {
+        "slug": "volleyball",
+        "courtCount": 2,
+        "surface": "SAND",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:volleyball:9",
+    "name": "Rogers Park Park Volleyball Courts",
+    "slug": "rogers-park-volleyball-9",
+    "lat": 42.0114,
+    "lng": -87.668,
+    "neighborhood": "Rogers Park",
+    "address": "1336 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/volleyball-01.jpg",
+    "sports": [
+      {
+        "slug": "volleyball",
+        "courtCount": 2,
+        "surface": "SAND",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:volleyball:10",
+    "name": "Albany Park Athletic Center Volleyball Courts",
+    "slug": "albany-park-volleyball-10",
+    "lat": 41.97280000000001,
+    "lng": -87.723,
+    "neighborhood": "Albany Park",
+    "address": "1353 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": false,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/volleyball-01.jpg",
+    "sports": [
+      {
+        "slug": "volleyball",
+        "courtCount": 2,
+        "surface": "SAND",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:volleyball:11",
+    "name": "Logan Square Park Volleyball Courts",
+    "slug": "logan-square-volleyball-11",
+    "lat": 41.923199999999994,
+    "lng": -87.7029,
+    "neighborhood": "Logan Square",
+    "address": "1370 S Halsted St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/volleyball-02.jpg",
+    "sports": [
+      {
+        "slug": "volleyball",
+        "courtCount": 2,
+        "surface": "SAND",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:volleyball:12",
+    "name": "Bridgeport Athletic Center Volleyball Courts",
+    "slug": "bridgeport-volleyball-12",
+    "lat": 41.8346,
+    "lng": -87.6429,
+    "neighborhood": "Bridgeport",
+    "address": "1387 N Clark St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/volleyball-01.jpg",
+    "sports": [
+      {
+        "slug": "volleyball",
+        "courtCount": 2,
+        "surface": "SAND",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:volleyball:13",
+    "name": "Bronzeville Park Volleyball Courts",
+    "slug": "bronzeville-volleyball-13",
+    "lat": 41.831,
+    "lng": -87.61489999999999,
+    "neighborhood": "Bronzeville",
+    "address": "1404 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": false,
+    "requiresReservation": true,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": false,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/volleyball-02.jpg",
+    "sports": [
+      {
+        "slug": "volleyball",
+        "courtCount": 2,
+        "surface": "SAND",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:volleyball:14",
+    "name": "Lakeview Athletic Center Volleyball Courts",
+    "slug": "lakeview-volleyball-14",
+    "lat": 41.946400000000004,
+    "lng": -87.6509,
+    "neighborhood": "Lakeview",
+    "address": "1421 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/volleyball-01.jpg",
+    "sports": [
+      {
+        "slug": "volleyball",
+        "courtCount": 2,
+        "surface": "SAND",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:volleyball:15",
+    "name": "Avondale Park Volleyball Courts",
+    "slug": "avondale-volleyball-15",
+    "lat": 41.9438,
+    "lng": -87.7079,
+    "neighborhood": "Avondale",
+    "address": "1438 S Halsted St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/volleyball-02.jpg",
+    "sports": [
+      {
+        "slug": "volleyball",
+        "courtCount": 2,
+        "surface": "SAND",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:baseball:1",
+    "name": "Bridgeport Park Baseball Diamond",
+    "slug": "bridgeport-baseball-1",
+    "lat": 41.8322,
+    "lng": -87.6491,
+    "neighborhood": "Bridgeport",
+    "address": "1200 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": false,
+    "requiresReservation": true,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": false,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/baseball-01.jpg",
+    "sports": [
+      {
+        "slug": "baseball",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:baseball:2",
+    "name": "Bronzeville Athletic Center Baseball Diamond",
+    "slug": "bronzeville-baseball-2",
+    "lat": 41.8286,
+    "lng": -87.6211,
+    "neighborhood": "Bronzeville",
+    "address": "1217 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/baseball-02.jpg",
+    "sports": [
+      {
+        "slug": "baseball",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:baseball:3",
+    "name": "Lakeview Park Baseball Diamond",
+    "slug": "lakeview-baseball-3",
+    "lat": 41.944,
+    "lng": -87.6571,
+    "neighborhood": "Lakeview",
+    "address": "1234 S Halsted St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/baseball-01.jpg",
+    "sports": [
+      {
+        "slug": "baseball",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:baseball:4",
+    "name": "Avondale Athletic Center Baseball Diamond",
+    "slug": "avondale-baseball-4",
+    "lat": 41.9414,
+    "lng": -87.7141,
+    "neighborhood": "Avondale",
+    "address": "1251 N Clark St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": false,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/baseball-02.jpg",
+    "sports": [
+      {
+        "slug": "baseball",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:baseball:5",
+    "name": "Beverly Park Baseball Diamond",
+    "slug": "beverly-baseball-5",
+    "lat": 41.723800000000004,
+    "lng": -87.6791,
+    "neighborhood": "Beverly",
+    "address": "1268 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/baseball-01.jpg",
+    "sports": [
+      {
+        "slug": "baseball",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:baseball:6",
+    "name": "Pilsen Athletic Center Baseball Diamond",
+    "slug": "pilsen-baseball-6",
+    "lat": 41.852199999999996,
+    "lng": -87.657,
+    "neighborhood": "Pilsen",
+    "address": "1285 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/baseball-02.jpg",
+    "sports": [
+      {
+        "slug": "baseball",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:baseball:7",
+    "name": "Humboldt Park Park Baseball Diamond",
+    "slug": "humboldt-park-baseball-7",
+    "lat": 41.8996,
+    "lng": -87.702,
+    "neighborhood": "Humboldt Park",
+    "address": "1302 S Halsted St",
+    "isIndoor": false,
+    "isFree": false,
+    "requiresReservation": true,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": false,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/baseball-01.jpg",
+    "sports": [
+      {
+        "slug": "baseball",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:baseball:8",
+    "name": "Lincoln Park Athletic Center Baseball Diamond",
+    "slug": "lincoln-park-baseball-8",
+    "lat": 41.922,
+    "lng": -87.647,
+    "neighborhood": "Lincoln Park",
+    "address": "1319 N Clark St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/baseball-02.jpg",
+    "sports": [
+      {
+        "slug": "baseball",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:baseball:9",
+    "name": "Uptown Park Baseball Diamond",
+    "slug": "uptown-baseball-9",
+    "lat": 41.9684,
+    "lng": -87.658,
+    "neighborhood": "Uptown",
+    "address": "1336 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/baseball-01.jpg",
+    "sports": [
+      {
+        "slug": "baseball",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:baseball:10",
+    "name": "Irving Park Athletic Center Baseball Diamond",
+    "slug": "irving-park-baseball-10",
+    "lat": 41.957800000000006,
+    "lng": -87.73,
+    "neighborhood": "Irving Park",
+    "address": "1353 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": false,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/baseball-01.jpg",
+    "sports": [
+      {
+        "slug": "baseball",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:baseball:11",
+    "name": "Hyde Park Park Baseball Diamond",
+    "slug": "hyde-park-baseball-11",
+    "lat": 41.789199999999994,
+    "lng": -87.59089999999999,
+    "neighborhood": "Hyde Park",
+    "address": "1370 S Halsted St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/baseball-02.jpg",
+    "sports": [
+      {
+        "slug": "baseball",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:baseball:12",
+    "name": "Andersonville Athletic Center Baseball Diamond",
+    "slug": "andersonville-baseball-12",
+    "lat": 41.9786,
+    "lng": -87.6659,
+    "neighborhood": "Andersonville",
+    "address": "1387 N Clark St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/baseball-01.jpg",
+    "sports": [
+      {
+        "slug": "baseball",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:baseball:13",
+    "name": "Wicker Park Park Baseball Diamond",
+    "slug": "wicker-park-baseball-13",
+    "lat": 41.908,
+    "lng": -87.6759,
+    "neighborhood": "Wicker Park",
+    "address": "1404 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": false,
+    "requiresReservation": true,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": false,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/baseball-02.jpg",
+    "sports": [
+      {
+        "slug": "baseball",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:baseball:14",
+    "name": "West Loop Athletic Center Baseball Diamond",
+    "slug": "west-loop-baseball-14",
+    "lat": 41.885400000000004,
+    "lng": -87.64789999999999,
+    "neighborhood": "West Loop",
+    "address": "1421 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/baseball-01.jpg",
+    "sports": [
+      {
+        "slug": "baseball",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:baseball:15",
+    "name": "South Loop Park Baseball Diamond",
+    "slug": "south-loop-baseball-15",
+    "lat": 41.8628,
+    "lng": -87.6219,
+    "neighborhood": "South Loop",
+    "address": "1438 S Halsted St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/baseball-02.jpg",
+    "sports": [
+      {
+        "slug": "baseball",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:softball:1",
+    "name": "Andersonville Park Softball Diamond",
+    "slug": "andersonville-softball-1",
+    "lat": 41.9762,
+    "lng": -87.6721,
+    "neighborhood": "Andersonville",
+    "address": "1200 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": false,
+    "requiresReservation": true,
+    "hasLights": false,
+    "hasParking": true,
+    "hasRestrooms": false,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/softball-02.jpg",
+    "sports": [
+      {
+        "slug": "softball",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:softball:2",
+    "name": "Wicker Park Athletic Center Softball Diamond",
+    "slug": "wicker-park-softball-2",
+    "lat": 41.9056,
+    "lng": -87.6821,
+    "neighborhood": "Wicker Park",
+    "address": "1217 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/softball-01.jpg",
+    "sports": [
+      {
+        "slug": "softball",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:softball:3",
+    "name": "West Loop Park Softball Diamond",
+    "slug": "west-loop-softball-3",
+    "lat": 41.883,
+    "lng": -87.6541,
+    "neighborhood": "West Loop",
+    "address": "1234 S Halsted St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/softball-02.jpg",
+    "sports": [
+      {
+        "slug": "softball",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:softball:4",
+    "name": "South Loop Athletic Center Softball Diamond",
+    "slug": "south-loop-softball-4",
+    "lat": 41.8604,
+    "lng": -87.6281,
+    "neighborhood": "South Loop",
+    "address": "1251 N Clark St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": false,
+    "hasRestrooms": false,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/softball-01.jpg",
+    "sports": [
+      {
+        "slug": "softball",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:softball:5",
+    "name": "Rogers Park Park Softball Diamond",
+    "slug": "rogers-park-softball-5",
+    "lat": 42.0138,
+    "lng": -87.67110000000001,
+    "neighborhood": "Rogers Park",
+    "address": "1268 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/softball-02.jpg",
+    "sports": [
+      {
+        "slug": "softball",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:softball:6",
+    "name": "Albany Park Athletic Center Softball Diamond",
+    "slug": "albany-park-softball-6",
+    "lat": 41.9632,
+    "lng": -87.723,
+    "neighborhood": "Albany Park",
+    "address": "1285 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/softball-01.jpg",
+    "sports": [
+      {
+        "slug": "softball",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:softball:7",
+    "name": "Logan Square Park Softball Diamond",
+    "slug": "logan-square-softball-7",
+    "lat": 41.925599999999996,
+    "lng": -87.706,
+    "neighborhood": "Logan Square",
+    "address": "1302 S Halsted St",
+    "isIndoor": false,
+    "isFree": false,
+    "requiresReservation": true,
+    "hasLights": false,
+    "hasParking": true,
+    "hasRestrooms": false,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/softball-02.jpg",
+    "sports": [
+      {
+        "slug": "softball",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:softball:8",
+    "name": "Bridgeport Athletic Center Softball Diamond",
+    "slug": "bridgeport-softball-8",
+    "lat": 41.837,
+    "lng": -87.646,
+    "neighborhood": "Bridgeport",
+    "address": "1319 N Clark St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/softball-01.jpg",
+    "sports": [
+      {
+        "slug": "softball",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:softball:9",
+    "name": "Bronzeville Park Softball Diamond",
+    "slug": "bronzeville-softball-9",
+    "lat": 41.833400000000005,
+    "lng": -87.618,
+    "neighborhood": "Bronzeville",
+    "address": "1336 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/softball-02.jpg",
+    "sports": [
+      {
+        "slug": "softball",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:softball:10",
+    "name": "Lakeview Athletic Center Softball Diamond",
+    "slug": "lakeview-softball-10",
+    "lat": 41.948800000000006,
+    "lng": -87.654,
+    "neighborhood": "Lakeview",
+    "address": "1353 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": false,
+    "hasRestrooms": false,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/softball-02.jpg",
+    "sports": [
+      {
+        "slug": "softball",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:softball:11",
+    "name": "Avondale Park Softball Diamond",
+    "slug": "avondale-softball-11",
+    "lat": 41.9342,
+    "lng": -87.7079,
+    "neighborhood": "Avondale",
+    "address": "1370 S Halsted St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/softball-01.jpg",
+    "sports": [
+      {
+        "slug": "softball",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:softball:12",
+    "name": "Beverly Athletic Center Softball Diamond",
+    "slug": "beverly-softball-12",
+    "lat": 41.7166,
+    "lng": -87.6729,
+    "neighborhood": "Beverly",
+    "address": "1387 N Clark St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/softball-02.jpg",
+    "sports": [
+      {
+        "slug": "softball",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:softball:13",
+    "name": "Pilsen Park Softball Diamond",
+    "slug": "pilsen-softball-13",
+    "lat": 41.857,
+    "lng": -87.6539,
+    "neighborhood": "Pilsen",
+    "address": "1404 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": false,
+    "requiresReservation": true,
+    "hasLights": false,
+    "hasParking": true,
+    "hasRestrooms": false,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/softball-01.jpg",
+    "sports": [
+      {
+        "slug": "softball",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:softball:14",
+    "name": "Humboldt Park Athletic Center Softball Diamond",
+    "slug": "humboldt-park-softball-14",
+    "lat": 41.9044,
+    "lng": -87.6989,
+    "neighborhood": "Humboldt Park",
+    "address": "1421 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/softball-02.jpg",
+    "sports": [
+      {
+        "slug": "softball",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:softball:15",
+    "name": "Lincoln Park Park Softball Diamond",
+    "slug": "lincoln-park-softball-15",
+    "lat": 41.9268,
+    "lng": -87.6439,
+    "neighborhood": "Lincoln Park",
+    "address": "1438 S Halsted St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/softball-01.jpg",
+    "sports": [
+      {
+        "slug": "softball",
+        "courtCount": 1,
+        "surface": "GRASS",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:running_track:1",
+    "name": "Beverly Park Running Track",
+    "slug": "beverly-running_track-1",
+    "lat": 41.7142,
+    "lng": -87.6791,
+    "neighborhood": "Beverly",
+    "address": "1200 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": false,
+    "requiresReservation": true,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": false,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/running-track-02.jpg",
+    "sports": [
+      {
+        "slug": "running_track",
+        "courtCount": 1,
+        "surface": "RUBBER",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:running_track:2",
+    "name": "Pilsen Athletic Center Running Track",
+    "slug": "pilsen-running_track-2",
+    "lat": 41.8546,
+    "lng": -87.6601,
+    "neighborhood": "Pilsen",
+    "address": "1217 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/running-track-01.jpg",
+    "sports": [
+      {
+        "slug": "running_track",
+        "courtCount": 1,
+        "surface": "RUBBER",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:running_track:3",
+    "name": "Humboldt Park Park Running Track",
+    "slug": "humboldt-park-running_track-3",
+    "lat": 41.902,
+    "lng": -87.7051,
+    "neighborhood": "Humboldt Park",
+    "address": "1234 S Halsted St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/running-track-02.jpg",
+    "sports": [
+      {
+        "slug": "running_track",
+        "courtCount": 1,
+        "surface": "RUBBER",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:running_track:4",
+    "name": "Lincoln Park Athletic Center Running Track",
+    "slug": "lincoln-park-running_track-4",
+    "lat": 41.9244,
+    "lng": -87.65010000000001,
+    "neighborhood": "Lincoln Park",
+    "address": "1251 N Clark St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": false,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/running-track-01.jpg",
+    "sports": [
+      {
+        "slug": "running_track",
+        "courtCount": 1,
+        "surface": "RUBBER",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:running_track:5",
+    "name": "Uptown Park Running Track",
+    "slug": "uptown-running_track-5",
+    "lat": 41.970800000000004,
+    "lng": -87.6611,
+    "neighborhood": "Uptown",
+    "address": "1268 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/running-track-02.jpg",
+    "sports": [
+      {
+        "slug": "running_track",
+        "courtCount": 1,
+        "surface": "RUBBER",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:running_track:6",
+    "name": "Irving Park Athletic Center Running Track",
+    "slug": "irving-park-running_track-6",
+    "lat": 41.9482,
+    "lng": -87.73,
+    "neighborhood": "Irving Park",
+    "address": "1285 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/running-track-01.jpg",
+    "sports": [
+      {
+        "slug": "running_track",
+        "courtCount": 1,
+        "surface": "RUBBER",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:running_track:7",
+    "name": "Hyde Park Park Running Track",
+    "slug": "hyde-park-running_track-7",
+    "lat": 41.791599999999995,
+    "lng": -87.594,
+    "neighborhood": "Hyde Park",
+    "address": "1302 S Halsted St",
+    "isIndoor": false,
+    "isFree": false,
+    "requiresReservation": true,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": false,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/running-track-02.jpg",
+    "sports": [
+      {
+        "slug": "running_track",
+        "courtCount": 1,
+        "surface": "RUBBER",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:running_track:8",
+    "name": "Andersonville Athletic Center Running Track",
+    "slug": "andersonville-running_track-8",
+    "lat": 41.981,
+    "lng": -87.669,
+    "neighborhood": "Andersonville",
+    "address": "1319 N Clark St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/running-track-01.jpg",
+    "sports": [
+      {
+        "slug": "running_track",
+        "courtCount": 1,
+        "surface": "RUBBER",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:running_track:9",
+    "name": "Wicker Park Park Running Track",
+    "slug": "wicker-park-running_track-9",
+    "lat": 41.9104,
+    "lng": -87.679,
+    "neighborhood": "Wicker Park",
+    "address": "1336 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/running-track-02.jpg",
+    "sports": [
+      {
+        "slug": "running_track",
+        "courtCount": 1,
+        "surface": "RUBBER",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:running_track:10",
+    "name": "West Loop Athletic Center Running Track",
+    "slug": "west-loop-running_track-10",
+    "lat": 41.887800000000006,
+    "lng": -87.651,
+    "neighborhood": "West Loop",
+    "address": "1353 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": false,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/running-track-02.jpg",
+    "sports": [
+      {
+        "slug": "running_track",
+        "courtCount": 1,
+        "surface": "RUBBER",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:running_track:11",
+    "name": "South Loop Park Running Track",
+    "slug": "south-loop-running_track-11",
+    "lat": 41.853199999999994,
+    "lng": -87.6219,
+    "neighborhood": "South Loop",
+    "address": "1370 S Halsted St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/running-track-01.jpg",
+    "sports": [
+      {
+        "slug": "running_track",
+        "courtCount": 1,
+        "surface": "RUBBER",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:running_track:12",
+    "name": "Rogers Park Athletic Center Running Track",
+    "slug": "rogers-park-running_track-12",
+    "lat": 42.0066,
+    "lng": -87.6649,
+    "neighborhood": "Rogers Park",
+    "address": "1387 N Clark St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/running-track-02.jpg",
+    "sports": [
+      {
+        "slug": "running_track",
+        "courtCount": 1,
+        "surface": "RUBBER",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:running_track:13",
+    "name": "Albany Park Park Running Track",
+    "slug": "albany-park-running_track-13",
+    "lat": 41.968,
+    "lng": -87.7199,
+    "neighborhood": "Albany Park",
+    "address": "1404 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": false,
+    "requiresReservation": true,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": false,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/running-track-01.jpg",
+    "sports": [
+      {
+        "slug": "running_track",
+        "courtCount": 1,
+        "surface": "RUBBER",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:running_track:14",
+    "name": "Logan Square Athletic Center Running Track",
+    "slug": "logan-square-running_track-14",
+    "lat": 41.9304,
+    "lng": -87.7029,
+    "neighborhood": "Logan Square",
+    "address": "1421 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/running-track-02.jpg",
+    "sports": [
+      {
+        "slug": "running_track",
+        "courtCount": 1,
+        "surface": "RUBBER",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:running_track:15",
+    "name": "Bridgeport Park Running Track",
+    "slug": "bridgeport-running_track-15",
+    "lat": 41.841800000000006,
+    "lng": -87.6429,
+    "neighborhood": "Bridgeport",
+    "address": "1438 S Halsted St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/running-track-01.jpg",
+    "sports": [
+      {
+        "slug": "running_track",
+        "courtCount": 1,
+        "surface": "RUBBER",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:golf_range:1",
+    "name": "Rogers Park Park Driving Range",
+    "slug": "rogers-park-golf_range-1",
+    "lat": 42.0042,
+    "lng": -87.67110000000001,
+    "neighborhood": "Rogers Park",
+    "address": "1200 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": false,
+    "requiresReservation": true,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": false,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/golf-range-01.jpg",
+    "sports": [
+      {
+        "slug": "golf_range",
+        "courtCount": 12,
+        "surface": "TURF",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:golf_range:2",
+    "name": "Albany Park Athletic Center Driving Range",
+    "slug": "albany-park-golf_range-2",
+    "lat": 41.9656,
+    "lng": -87.7261,
+    "neighborhood": "Albany Park",
+    "address": "1217 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/golf-range-02.jpg",
+    "sports": [
+      {
+        "slug": "golf_range",
+        "courtCount": 12,
+        "surface": "TURF",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:golf_range:3",
+    "name": "Logan Square Park Driving Range",
+    "slug": "logan-square-golf_range-3",
+    "lat": 41.928,
+    "lng": -87.7091,
+    "neighborhood": "Logan Square",
+    "address": "1234 S Halsted St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/golf-range-01.jpg",
+    "sports": [
+      {
+        "slug": "golf_range",
+        "courtCount": 12,
+        "surface": "TURF",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:golf_range:4",
+    "name": "Bridgeport Athletic Center Driving Range",
+    "slug": "bridgeport-golf_range-4",
+    "lat": 41.839400000000005,
+    "lng": -87.6491,
+    "neighborhood": "Bridgeport",
+    "address": "1251 N Clark St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": false,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/golf-range-02.jpg",
+    "sports": [
+      {
+        "slug": "golf_range",
+        "courtCount": 12,
+        "surface": "TURF",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:golf_range:5",
+    "name": "Bronzeville Park Driving Range",
+    "slug": "bronzeville-golf_range-5",
+    "lat": 41.835800000000006,
+    "lng": -87.6211,
+    "neighborhood": "Bronzeville",
+    "address": "1268 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/golf-range-01.jpg",
+    "sports": [
+      {
+        "slug": "golf_range",
+        "courtCount": 12,
+        "surface": "TURF",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:golf_range:6",
+    "name": "Lakeview Athletic Center Driving Range",
+    "slug": "lakeview-golf_range-6",
+    "lat": 41.9392,
+    "lng": -87.654,
+    "neighborhood": "Lakeview",
+    "address": "1285 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/golf-range-02.jpg",
+    "sports": [
+      {
+        "slug": "golf_range",
+        "courtCount": 12,
+        "surface": "TURF",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:golf_range:7",
+    "name": "Avondale Park Driving Range",
+    "slug": "avondale-golf_range-7",
+    "lat": 41.9366,
+    "lng": -87.711,
+    "neighborhood": "Avondale",
+    "address": "1302 S Halsted St",
+    "isIndoor": false,
+    "isFree": false,
+    "requiresReservation": true,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": false,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/golf-range-01.jpg",
+    "sports": [
+      {
+        "slug": "golf_range",
+        "courtCount": 12,
+        "surface": "TURF",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:golf_range:8",
+    "name": "Beverly Athletic Center Driving Range",
+    "slug": "beverly-golf_range-8",
+    "lat": 41.719,
+    "lng": -87.676,
+    "neighborhood": "Beverly",
+    "address": "1319 N Clark St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/golf-range-02.jpg",
+    "sports": [
+      {
+        "slug": "golf_range",
+        "courtCount": 12,
+        "surface": "TURF",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:golf_range:9",
+    "name": "Pilsen Park Driving Range",
+    "slug": "pilsen-golf_range-9",
+    "lat": 41.8594,
+    "lng": -87.657,
+    "neighborhood": "Pilsen",
+    "address": "1336 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/golf-range-01.jpg",
+    "sports": [
+      {
+        "slug": "golf_range",
+        "courtCount": 12,
+        "surface": "TURF",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:golf_range:10",
+    "name": "Humboldt Park Athletic Center Driving Range",
+    "slug": "humboldt-park-golf_range-10",
+    "lat": 41.906800000000004,
+    "lng": -87.702,
+    "neighborhood": "Humboldt Park",
+    "address": "1353 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": false,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/golf-range-01.jpg",
+    "sports": [
+      {
+        "slug": "golf_range",
+        "courtCount": 12,
+        "surface": "TURF",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:golf_range:11",
+    "name": "Lincoln Park Park Driving Range",
+    "slug": "lincoln-park-golf_range-11",
+    "lat": 41.917199999999994,
+    "lng": -87.6439,
+    "neighborhood": "Lincoln Park",
+    "address": "1370 S Halsted St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/golf-range-02.jpg",
+    "sports": [
+      {
+        "slug": "golf_range",
+        "courtCount": 12,
+        "surface": "TURF",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:golf_range:12",
+    "name": "Uptown Athletic Center Driving Range",
+    "slug": "uptown-golf_range-12",
+    "lat": 41.9636,
+    "lng": -87.6549,
+    "neighborhood": "Uptown",
+    "address": "1387 N Clark St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/golf-range-01.jpg",
+    "sports": [
+      {
+        "slug": "golf_range",
+        "courtCount": 12,
+        "surface": "TURF",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:golf_range:13",
+    "name": "Irving Park Park Driving Range",
+    "slug": "irving-park-golf_range-13",
+    "lat": 41.953,
+    "lng": -87.7269,
+    "neighborhood": "Irving Park",
+    "address": "1404 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": false,
+    "requiresReservation": true,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": false,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/golf-range-02.jpg",
+    "sports": [
+      {
+        "slug": "golf_range",
+        "courtCount": 12,
+        "surface": "TURF",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:golf_range:14",
+    "name": "Hyde Park Athletic Center Driving Range",
+    "slug": "hyde-park-golf_range-14",
+    "lat": 41.7964,
+    "lng": -87.59089999999999,
+    "neighborhood": "Hyde Park",
+    "address": "1421 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/golf-range-01.jpg",
+    "sports": [
+      {
+        "slug": "golf_range",
+        "courtCount": 12,
+        "surface": "TURF",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:golf_range:15",
+    "name": "Andersonville Park Driving Range",
+    "slug": "andersonville-golf_range-15",
+    "lat": 41.985800000000005,
+    "lng": -87.6659,
+    "neighborhood": "Andersonville",
+    "address": "1438 S Halsted St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/golf-range-02.jpg",
+    "sports": [
+      {
+        "slug": "golf_range",
+        "courtCount": 12,
+        "surface": "TURF",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:skate:1",
+    "name": "Uptown Park Skate Park",
+    "slug": "uptown-skate-1",
+    "lat": 41.9612,
+    "lng": -87.6611,
+    "neighborhood": "Uptown",
+    "address": "1200 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": false,
+    "requiresReservation": true,
+    "hasLights": false,
+    "hasParking": true,
+    "hasRestrooms": false,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/skate-01.jpg",
+    "sports": [
+      {
+        "slug": "skate",
+        "courtCount": 1,
+        "surface": "CONCRETE",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:skate:2",
+    "name": "Irving Park Athletic Center Skate Park",
+    "slug": "irving-park-skate-2",
+    "lat": 41.9506,
+    "lng": -87.73310000000001,
+    "neighborhood": "Irving Park",
+    "address": "1217 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/skate-02.jpg",
+    "sports": [
+      {
+        "slug": "skate",
+        "courtCount": 1,
+        "surface": "CONCRETE",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:skate:3",
+    "name": "Hyde Park Park Skate Park",
+    "slug": "hyde-park-skate-3",
+    "lat": 41.794,
+    "lng": -87.5971,
+    "neighborhood": "Hyde Park",
+    "address": "1234 S Halsted St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/skate-01.jpg",
+    "sports": [
+      {
+        "slug": "skate",
+        "courtCount": 1,
+        "surface": "CONCRETE",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:skate:4",
+    "name": "Andersonville Athletic Center Skate Park",
+    "slug": "andersonville-skate-4",
+    "lat": 41.9834,
+    "lng": -87.6721,
+    "neighborhood": "Andersonville",
+    "address": "1251 N Clark St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": false,
+    "hasRestrooms": false,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/skate-02.jpg",
+    "sports": [
+      {
+        "slug": "skate",
+        "courtCount": 1,
+        "surface": "CONCRETE",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:skate:5",
+    "name": "Wicker Park Park Skate Park",
+    "slug": "wicker-park-skate-5",
+    "lat": 41.912800000000004,
+    "lng": -87.6821,
+    "neighborhood": "Wicker Park",
+    "address": "1268 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/skate-01.jpg",
+    "sports": [
+      {
+        "slug": "skate",
+        "courtCount": 1,
+        "surface": "CONCRETE",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:skate:6",
+    "name": "West Loop Athletic Center Skate Park",
+    "slug": "west-loop-skate-6",
+    "lat": 41.8782,
+    "lng": -87.651,
+    "neighborhood": "West Loop",
+    "address": "1285 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/skate-02.jpg",
+    "sports": [
+      {
+        "slug": "skate",
+        "courtCount": 1,
+        "surface": "CONCRETE",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:skate:7",
+    "name": "South Loop Park Skate Park",
+    "slug": "south-loop-skate-7",
+    "lat": 41.855599999999995,
+    "lng": -87.625,
+    "neighborhood": "South Loop",
+    "address": "1302 S Halsted St",
+    "isIndoor": false,
+    "isFree": false,
+    "requiresReservation": true,
+    "hasLights": false,
+    "hasParking": true,
+    "hasRestrooms": false,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/skate-01.jpg",
+    "sports": [
+      {
+        "slug": "skate",
+        "courtCount": 1,
+        "surface": "CONCRETE",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:skate:8",
+    "name": "Rogers Park Athletic Center Skate Park",
+    "slug": "rogers-park-skate-8",
+    "lat": 42.009,
+    "lng": -87.668,
+    "neighborhood": "Rogers Park",
+    "address": "1319 N Clark St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/skate-02.jpg",
+    "sports": [
+      {
+        "slug": "skate",
+        "courtCount": 1,
+        "surface": "CONCRETE",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:skate:9",
+    "name": "Albany Park Park Skate Park",
+    "slug": "albany-park-skate-9",
+    "lat": 41.970400000000005,
+    "lng": -87.723,
+    "neighborhood": "Albany Park",
+    "address": "1336 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/skate-01.jpg",
+    "sports": [
+      {
+        "slug": "skate",
+        "courtCount": 1,
+        "surface": "CONCRETE",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:skate:10",
+    "name": "Logan Square Athletic Center Skate Park",
+    "slug": "logan-square-skate-10",
+    "lat": 41.9328,
+    "lng": -87.706,
+    "neighborhood": "Logan Square",
+    "address": "1353 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": false,
+    "hasRestrooms": false,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/skate-01.jpg",
+    "sports": [
+      {
+        "slug": "skate",
+        "courtCount": 1,
+        "surface": "CONCRETE",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:skate:11",
+    "name": "Bridgeport Park Skate Park",
+    "slug": "bridgeport-skate-11",
+    "lat": 41.8322,
+    "lng": -87.6429,
+    "neighborhood": "Bridgeport",
+    "address": "1370 S Halsted St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/skate-02.jpg",
+    "sports": [
+      {
+        "slug": "skate",
+        "courtCount": 1,
+        "surface": "CONCRETE",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:skate:12",
+    "name": "Bronzeville Athletic Center Skate Park",
+    "slug": "bronzeville-skate-12",
+    "lat": 41.8286,
+    "lng": -87.61489999999999,
+    "neighborhood": "Bronzeville",
+    "address": "1387 N Clark St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/skate-01.jpg",
+    "sports": [
+      {
+        "slug": "skate",
+        "courtCount": 1,
+        "surface": "CONCRETE",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:skate:13",
+    "name": "Lakeview Park Skate Park",
+    "slug": "lakeview-skate-13",
+    "lat": 41.944,
+    "lng": -87.6509,
+    "neighborhood": "Lakeview",
+    "address": "1404 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": false,
+    "requiresReservation": true,
+    "hasLights": false,
+    "hasParking": true,
+    "hasRestrooms": false,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/skate-02.jpg",
+    "sports": [
+      {
+        "slug": "skate",
+        "courtCount": 1,
+        "surface": "CONCRETE",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:skate:14",
+    "name": "Avondale Athletic Center Skate Park",
+    "slug": "avondale-skate-14",
+    "lat": 41.9414,
+    "lng": -87.7079,
+    "neighborhood": "Avondale",
+    "address": "1421 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/skate-01.jpg",
+    "sports": [
+      {
+        "slug": "skate",
+        "courtCount": 1,
+        "surface": "CONCRETE",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:skate:15",
+    "name": "Beverly Park Skate Park",
+    "slug": "beverly-skate-15",
+    "lat": 41.723800000000004,
+    "lng": -87.6729,
+    "neighborhood": "Beverly",
+    "address": "1438 S Halsted St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/skate-02.jpg",
+    "sports": [
+      {
+        "slug": "skate",
+        "courtCount": 1,
+        "surface": "CONCRETE",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:football:1",
+    "name": "Bronzeville Park Football Field",
+    "slug": "bronzeville-football-1",
+    "lat": 41.8262,
+    "lng": -87.6211,
+    "neighborhood": "Bronzeville",
+    "address": "1200 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": false,
+    "requiresReservation": true,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": false,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/football-02.jpg",
+    "sports": [
+      {
+        "slug": "football",
+        "courtCount": 1,
+        "surface": "TURF",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:football:2",
+    "name": "Lakeview Athletic Center Football Field",
+    "slug": "lakeview-football-2",
+    "lat": 41.9416,
+    "lng": -87.6571,
+    "neighborhood": "Lakeview",
+    "address": "1217 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/football-01.jpg",
+    "sports": [
+      {
+        "slug": "football",
+        "courtCount": 1,
+        "surface": "TURF",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:football:3",
+    "name": "Avondale Park Football Field",
+    "slug": "avondale-football-3",
+    "lat": 41.939,
+    "lng": -87.7141,
+    "neighborhood": "Avondale",
+    "address": "1234 S Halsted St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/football-02.jpg",
+    "sports": [
+      {
+        "slug": "football",
+        "courtCount": 1,
+        "surface": "TURF",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:football:4",
+    "name": "Beverly Athletic Center Football Field",
+    "slug": "beverly-football-4",
+    "lat": 41.7214,
+    "lng": -87.6791,
+    "neighborhood": "Beverly",
+    "address": "1251 N Clark St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": false,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/football-01.jpg",
+    "sports": [
+      {
+        "slug": "football",
+        "courtCount": 1,
+        "surface": "TURF",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:football:5",
+    "name": "Pilsen Park Football Field",
+    "slug": "pilsen-football-5",
+    "lat": 41.8618,
+    "lng": -87.6601,
+    "neighborhood": "Pilsen",
+    "address": "1268 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/football-02.jpg",
+    "sports": [
+      {
+        "slug": "football",
+        "courtCount": 1,
+        "surface": "TURF",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:football:6",
+    "name": "Humboldt Park Athletic Center Football Field",
+    "slug": "humboldt-park-football-6",
+    "lat": 41.8972,
+    "lng": -87.702,
+    "neighborhood": "Humboldt Park",
+    "address": "1285 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/football-01.jpg",
+    "sports": [
+      {
+        "slug": "football",
+        "courtCount": 1,
+        "surface": "TURF",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:football:7",
+    "name": "Lincoln Park Park Football Field",
+    "slug": "lincoln-park-football-7",
+    "lat": 41.919599999999996,
+    "lng": -87.647,
+    "neighborhood": "Lincoln Park",
+    "address": "1302 S Halsted St",
+    "isIndoor": false,
+    "isFree": false,
+    "requiresReservation": true,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": false,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/football-02.jpg",
+    "sports": [
+      {
+        "slug": "football",
+        "courtCount": 1,
+        "surface": "TURF",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:football:8",
+    "name": "Uptown Athletic Center Football Field",
+    "slug": "uptown-football-8",
+    "lat": 41.966,
+    "lng": -87.658,
+    "neighborhood": "Uptown",
+    "address": "1319 N Clark St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/football-01.jpg",
+    "sports": [
+      {
+        "slug": "football",
+        "courtCount": 1,
+        "surface": "TURF",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:football:9",
+    "name": "Irving Park Park Football Field",
+    "slug": "irving-park-football-9",
+    "lat": 41.955400000000004,
+    "lng": -87.73,
+    "neighborhood": "Irving Park",
+    "address": "1336 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/football-02.jpg",
+    "sports": [
+      {
+        "slug": "football",
+        "courtCount": 1,
+        "surface": "TURF",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:football:10",
+    "name": "Hyde Park Athletic Center Football Field",
+    "slug": "hyde-park-football-10",
+    "lat": 41.7988,
+    "lng": -87.594,
+    "neighborhood": "Hyde Park",
+    "address": "1353 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": false,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/football-02.jpg",
+    "sports": [
+      {
+        "slug": "football",
+        "courtCount": 1,
+        "surface": "TURF",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:football:11",
+    "name": "Andersonville Park Football Field",
+    "slug": "andersonville-football-11",
+    "lat": 41.9762,
+    "lng": -87.6659,
+    "neighborhood": "Andersonville",
+    "address": "1370 S Halsted St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/football-01.jpg",
+    "sports": [
+      {
+        "slug": "football",
+        "courtCount": 1,
+        "surface": "TURF",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:football:12",
+    "name": "Wicker Park Athletic Center Football Field",
+    "slug": "wicker-park-football-12",
+    "lat": 41.9056,
+    "lng": -87.6759,
+    "neighborhood": "Wicker Park",
+    "address": "1387 N Clark St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/football-02.jpg",
+    "sports": [
+      {
+        "slug": "football",
+        "courtCount": 1,
+        "surface": "TURF",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:football:13",
+    "name": "West Loop Park Football Field",
+    "slug": "west-loop-football-13",
+    "lat": 41.883,
+    "lng": -87.64789999999999,
+    "neighborhood": "West Loop",
+    "address": "1404 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": false,
+    "requiresReservation": true,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": false,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/football-01.jpg",
+    "sports": [
+      {
+        "slug": "football",
+        "courtCount": 1,
+        "surface": "TURF",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:football:14",
+    "name": "South Loop Athletic Center Football Field",
+    "slug": "south-loop-football-14",
+    "lat": 41.8604,
+    "lng": -87.6219,
+    "neighborhood": "South Loop",
+    "address": "1421 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/football-02.jpg",
+    "sports": [
+      {
+        "slug": "football",
+        "courtCount": 1,
+        "surface": "TURF",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:football:15",
+    "name": "Rogers Park Park Football Field",
+    "slug": "rogers-park-football-15",
+    "lat": 42.0138,
+    "lng": -87.6649,
+    "neighborhood": "Rogers Park",
+    "address": "1438 S Halsted St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/football-01.jpg",
+    "sports": [
+      {
+        "slug": "football",
+        "courtCount": 1,
+        "surface": "TURF",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:handball:1",
+    "name": "Wicker Park Park Handball Courts",
+    "slug": "wicker-park-handball-1",
+    "lat": 41.9032,
+    "lng": -87.6821,
+    "neighborhood": "Wicker Park",
+    "address": "1200 N Milwaukee Ave",
+    "isIndoor": true,
+    "isFree": false,
+    "requiresReservation": true,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": false,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/handball-01.jpg",
+    "sports": [
+      {
+        "slug": "handball",
+        "courtCount": 2,
+        "surface": "HARDWOOD",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:handball:2",
+    "name": "West Loop Athletic Center Handball Courts",
+    "slug": "west-loop-handball-2",
+    "lat": 41.8806,
+    "lng": -87.6541,
+    "neighborhood": "West Loop",
+    "address": "1217 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/handball-02.jpg",
+    "sports": [
+      {
+        "slug": "handball",
+        "courtCount": 2,
+        "surface": "CONCRETE",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:handball:3",
+    "name": "South Loop Park Handball Courts",
+    "slug": "south-loop-handball-3",
+    "lat": 41.858,
+    "lng": -87.6281,
+    "neighborhood": "South Loop",
+    "address": "1234 S Halsted St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/handball-01.jpg",
+    "sports": [
+      {
+        "slug": "handball",
+        "courtCount": 2,
+        "surface": "CONCRETE",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:handball:4",
+    "name": "Rogers Park Athletic Center Handball Courts",
+    "slug": "rogers-park-handball-4",
+    "lat": 42.0114,
+    "lng": -87.67110000000001,
+    "neighborhood": "Rogers Park",
+    "address": "1251 N Clark St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": false,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/handball-02.jpg",
+    "sports": [
+      {
+        "slug": "handball",
+        "courtCount": 2,
+        "surface": "CONCRETE",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:handball:5",
+    "name": "Albany Park Park Handball Courts",
+    "slug": "albany-park-handball-5",
+    "lat": 41.97280000000001,
+    "lng": -87.7261,
+    "neighborhood": "Albany Park",
+    "address": "1268 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/handball-01.jpg",
+    "sports": [
+      {
+        "slug": "handball",
+        "courtCount": 2,
+        "surface": "CONCRETE",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:handball:6",
+    "name": "Logan Square Athletic Center Handball Courts",
+    "slug": "logan-square-handball-6",
+    "lat": 41.923199999999994,
+    "lng": -87.706,
+    "neighborhood": "Logan Square",
+    "address": "1285 W Division St",
+    "isIndoor": true,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/handball-02.jpg",
+    "sports": [
+      {
+        "slug": "handball",
+        "courtCount": 2,
+        "surface": "HARDWOOD",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:handball:7",
+    "name": "Bridgeport Park Handball Courts",
+    "slug": "bridgeport-handball-7",
+    "lat": 41.8346,
+    "lng": -87.646,
+    "neighborhood": "Bridgeport",
+    "address": "1302 S Halsted St",
+    "isIndoor": false,
+    "isFree": false,
+    "requiresReservation": true,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": false,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/handball-01.jpg",
+    "sports": [
+      {
+        "slug": "handball",
+        "courtCount": 2,
+        "surface": "CONCRETE",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:handball:8",
+    "name": "Bronzeville Athletic Center Handball Courts",
+    "slug": "bronzeville-handball-8",
+    "lat": 41.831,
+    "lng": -87.618,
+    "neighborhood": "Bronzeville",
+    "address": "1319 N Clark St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/handball-02.jpg",
+    "sports": [
+      {
+        "slug": "handball",
+        "courtCount": 2,
+        "surface": "CONCRETE",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:handball:9",
+    "name": "Lakeview Park Handball Courts",
+    "slug": "lakeview-handball-9",
+    "lat": 41.946400000000004,
+    "lng": -87.654,
+    "neighborhood": "Lakeview",
+    "address": "1336 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/handball-01.jpg",
+    "sports": [
+      {
+        "slug": "handball",
+        "courtCount": 2,
+        "surface": "CONCRETE",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:handball:10",
+    "name": "Avondale Athletic Center Handball Courts",
+    "slug": "avondale-handball-10",
+    "lat": 41.9438,
+    "lng": -87.711,
+    "neighborhood": "Avondale",
+    "address": "1353 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": false,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/handball-01.jpg",
+    "sports": [
+      {
+        "slug": "handball",
+        "courtCount": 2,
+        "surface": "CONCRETE",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:handball:11",
+    "name": "Beverly Park Handball Courts",
+    "slug": "beverly-handball-11",
+    "lat": 41.7142,
+    "lng": -87.6729,
+    "neighborhood": "Beverly",
+    "address": "1370 S Halsted St",
+    "isIndoor": true,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/handball-02.jpg",
+    "sports": [
+      {
+        "slug": "handball",
+        "courtCount": 2,
+        "surface": "HARDWOOD",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:handball:12",
+    "name": "Pilsen Athletic Center Handball Courts",
+    "slug": "pilsen-handball-12",
+    "lat": 41.8546,
+    "lng": -87.6539,
+    "neighborhood": "Pilsen",
+    "address": "1387 N Clark St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/handball-01.jpg",
+    "sports": [
+      {
+        "slug": "handball",
+        "courtCount": 2,
+        "surface": "CONCRETE",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:handball:13",
+    "name": "Humboldt Park Park Handball Courts",
+    "slug": "humboldt-park-handball-13",
+    "lat": 41.902,
+    "lng": -87.6989,
+    "neighborhood": "Humboldt Park",
+    "address": "1404 N Milwaukee Ave",
+    "isIndoor": false,
+    "isFree": false,
+    "requiresReservation": true,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": false,
+    "hasWater": false,
+    "photoUrl": "/seed-photos/handball-02.jpg",
+    "sports": [
+      {
+        "slug": "handball",
+        "courtCount": 2,
+        "surface": "CONCRETE",
+        "isLit": true
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:handball:14",
+    "name": "Lincoln Park Athletic Center Handball Courts",
+    "slug": "lincoln-park-handball-14",
+    "lat": 41.9244,
+    "lng": -87.6439,
+    "neighborhood": "Lincoln Park",
+    "address": "1421 W Division St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": false,
+    "hasParking": false,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/handball-01.jpg",
+    "sports": [
+      {
+        "slug": "handball",
+        "courtCount": 2,
+        "surface": "CONCRETE",
+        "isLit": false
+      }
+    ]
+  },
+  {
+    "osmId": "placeholder:handball:15",
+    "name": "Uptown Park Handball Courts",
+    "slug": "uptown-handball-15",
+    "lat": 41.970800000000004,
+    "lng": -87.6549,
+    "neighborhood": "Uptown",
+    "address": "1438 S Halsted St",
+    "isIndoor": false,
+    "isFree": true,
+    "requiresReservation": false,
+    "hasLights": true,
+    "hasParking": true,
+    "hasRestrooms": true,
+    "hasWater": true,
+    "photoUrl": "/seed-photos/handball-02.jpg",
+    "sports": [
+      {
+        "slug": "handball",
+        "courtCount": 2,
+        "surface": "CONCRETE",
+        "isLit": true
+      }
+    ]
+  }
+]

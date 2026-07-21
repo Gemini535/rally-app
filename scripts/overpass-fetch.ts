@@ -22,7 +22,7 @@ async function fetchWithRetry(url: string, init: RequestInit) {
 
 async function main() {
   await mkdir(dataDir, { recursive: true });
-  const overpass = await fetchWithRetry('https://overpass-api.de/api/interpreter', { method: 'POST', headers: { 'content-type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams({ data: query }) });
+  const overpass = await fetchWithRetry('https://overpass.private.coffee/api/interpreter', { method: 'POST', headers: { 'content-type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams({ data: query }) });
   await writeFile(join(dataDir, 'chicago-venues.raw.json'), `${JSON.stringify(await overpass.json(), null, 2)}\n`);
   const neighborhoods = await fetchWithRetry('https://gisapps.chicago.gov/arcgis/rest/services/ExternalApps/extoperational/MapServer/0/query?where=1%3D1&outFields=*&f=geojson&outSR=4326', {});
   await writeFile(join(dataDir, 'chicago-neighborhoods.geojson'), `${JSON.stringify(await neighborhoods.json(), null, 2)}\n`);
