@@ -60,6 +60,7 @@ export async function createEntryAndSession(userId: string, venueId: string, spo
 }
 
 export async function submitComparison(userId: string, sessionId: string, winnerEntryId: string | null) {
+  // Finalizing a ranking can touch a whole band; Supabase latency can exceed Prisma's 5s default.
   const result = await prisma.$transaction(async (tx) => {
     const session = await tx.comparisonSession.findFirst({ where: { id: sessionId, userId, status: 'ACTIVE' }, include: { subjectEntry: true } });
     if (!session) throw new RankingConflictError('Session is not active or is not owned by this user.');
@@ -79,7 +80,7 @@ export async function submitComparison(userId: string, sessionId: string, winner
     await tx.comparisonSession.update({ where: { id: sessionId }, data: { ...bounds, step } });
     if (bounds.lo < bounds.hi && step < session.maxSteps) return { nextPair: { opponentEntryId: opponent.id, opponent: opponent.venue } };
     return { result: await finalizeSession(tx, sessionId) };
-  });
+  }, { maxWait: 10_000, timeout: 20_000 });
   if ('result' in result && result.result !== undefined) await recomputeAffinityFor(userId, result.result.sportSlug);
   return result;
 }
