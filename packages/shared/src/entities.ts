@@ -43,9 +43,22 @@ export const VenueCardSchema = VenueMiniSchema.extend({
   reco: z.object({ rallyScore: z.number(), components: RecoComponentsSchema, gateReason: z.string().nullable(), why: z.array(z.string()) }).nullable(),
 });
 
+// open-meteo returns a local wall-clock sunset ("2026-07-22T20:24"), so sunsetAt is a plain string.
+export const WeatherSchema = z.object({
+  tempC: z.number(), precipProbabilityNext60: z.number(), windKph: z.number(), sunsetAt: z.string(),
+});
+
+export const FriendRankingSchema = z.object({
+  user: UserMiniSchema, affinity: z.number(), rallyScore: z.number(),
+  rankPosition: z.number().int(), totalRanked: z.number().int(), note: z.string().nullable(),
+});
+
 export const VenueDetailSchema = VenueCardSchema.extend({
   address: z.string().nullable(), state: z.string(), country: z.string(), hasParking: z.boolean(),
   hasRestrooms: z.boolean(), hasWater: z.boolean(), source: z.string(), conditionNotes: z.string().nullable(),
+  weather: WeatherSchema.nullable(), myNote: z.string().nullable(),
+  cityRank: z.object({ rank: z.number().int().positive(), total: z.number().int().positive() }).nullable(),
+  friendRankings: z.array(FriendRankingSchema),
   reviews: z.array(z.lazy(() => ReviewSchema)), checkIns: z.array(z.lazy(() => CheckInSchema)),
 });
 
@@ -97,6 +110,7 @@ export type UserProfile = z.infer<typeof UserProfileSchema>;
 export type VenueMini = z.infer<typeof VenueMiniSchema>;
 export type LiveStatus = z.infer<typeof LiveStatusSchema>;
 export type RecoComponents = z.infer<typeof RecoComponentsSchema>;
+export type Weather = z.infer<typeof WeatherSchema>;
 export type VenueCard = z.infer<typeof VenueCardSchema>;
 export type VenueDetail = z.infer<typeof VenueDetailSchema>;
 export type Entry = z.infer<typeof EntrySchema>;
@@ -104,6 +118,7 @@ export type RankedEntry = z.infer<typeof RankedEntrySchema>;
 export type ComparisonSession = z.infer<typeof ComparisonSessionSchema>;
 export type CheckIn = z.infer<typeof CheckInSchema>;
 export type Review = z.infer<typeof ReviewSchema>;
+export type FriendRanking = z.infer<typeof FriendRankingSchema>;
 export type Activity = z.infer<typeof ActivitySchema>;
 export type LeaderboardRow = z.infer<typeof LeaderboardRowSchema>;
 export type AffinityExplanation = z.infer<typeof AffinityExplanationSchema>;

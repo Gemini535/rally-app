@@ -1,5 +1,5 @@
 import { prisma } from '@rally/db';
-import { CreateEntryBody, SportSlugSchema, SubmitComparisonBody, type SportSlug } from '@rally/shared';
+import { CreateEntryBody, SportSlugSchema, SubmitComparisonBody, UpdateEntryBody, type SportSlug } from '@rally/shared';
 import { Router, type Router as RouterType } from 'express';
 import { z } from 'zod';
 import { optionalAuth, requireAuth } from '../middleware/auth.js';
@@ -48,6 +48,15 @@ rankingRouter.get('/users/:handle/list', optionalAuth, validate(SportQuery), asy
   const user = await prisma.user.findUnique({ where: { handle: routeParam(request.params.handle) } });
   if (!user) throw notFound('User not found.');
   response.json(listResponse(await getUserList(user.id, request.query.sport as SportSlug)));
+}));
+
+rankingRouter.patch('/entries/:id', requireAuth, validate({ body: UpdateEntryBody }), asyncHandler(async (request, response) => {
+  const body = request.body as typeof UpdateEntryBody._output;
+  const entry = await prisma.entry.findUnique({ where: { id: routeParam(request.params.id) } });
+  if (!entry) throw notFound('Entry not found.');
+  if (entry.userId !== request.user!.id) throw forbidden();
+  const updated = await prisma.entry.update({ where: { id: entry.id }, data: { note: body.note, ...(body.tags === undefined ? {} : { tags: body.tags }) } });
+  response.json({ entry: { id: updated.id, note: updated.note, tags: updated.tags } });
 }));
 
 rankingRouter.delete('/entries/:id', requireAuth, asyncHandler(async (request, response) => {

@@ -1,4 +1,4 @@
-import { prisma } from '@rally/db';
+import { prisma, prismaDirect } from '@rally/db';
 import type { Prisma } from '@rally/db';
 import type { Sentiment, SportSlug } from '@rally/shared';
 import { applyComparisonResult, eloUpdate, globalPositions, maxSteps, nextComparisonIndex, rescoreBand, resolveInsertIndex } from './core.js';
@@ -45,7 +45,8 @@ async function finalizeSession(tx: Transaction, sessionId: string) {
 }
 
 export async function createEntryAndSession(userId: string, venueId: string, sportSlug: SportSlug, sentiment: Sentiment, options: CreateEntryOptions = {}) {
-  return prisma.$transaction(async (tx) => {
+  // Interactive transaction → direct connection (pgbouncer transaction pooling hangs these).
+  return prismaDirect.$transaction(async (tx) => {
     const sport = await tx.sport.findUniqueOrThrow({ where: { slug: sportSlug } });
     const entry = await tx.entry.upsert({
       where: { userId_venueId_sportId: { userId, venueId, sportId: sport.id } },
@@ -68,7 +69,8 @@ export async function createEntryAndSession(userId: string, venueId: string, spo
 
 export async function submitComparison(userId: string, sessionId: string, winnerEntryId: string | null) {
   // Finalizing a ranking can touch a whole band; Supabase latency can exceed Prisma's 5s default.
-  const result = await prisma.$transaction(async (tx) => {
+  // Interactive transaction → direct connection (pgbouncer transaction pooling hangs these).
+  const result = await prismaDirect.$transaction(async (tx) => {
     const session = await tx.comparisonSession.findFirst({ where: { id: sessionId, userId, status: 'ACTIVE' }, include: { subjectEntry: true } });
     if (!session) throw new RankingConflictError('Session is not active or is not owned by this user.');
     const band = await tx.entry.findMany({ where: { userId, sportId: session.sportId, sentiment: session.subjectEntry.sentiment, status: 'RANKED', id: { not: session.subjectEntryId } }, orderBy: { rankPosition: 'asc' }, include: { venue: true } });
@@ -93,7 +95,8 @@ export async function submitComparison(userId: string, sessionId: string, winner
 }
 
 export async function abandonSession(userId: string, sessionId: string) {
-  const result = await prisma.$transaction(async (tx) => {
+  // Interactive transaction → direct connection (pgbouncer transaction pooling hangs these).
+  const result = await prismaDirect.$transaction(async (tx) => {
     const session = await tx.comparisonSession.findFirst({ where: { id: sessionId, userId, status: 'ACTIVE' } });
     if (!session) throw new RankingConflictError('Session is not active or is not owned by this user.');
     return finalizeSession(tx, session.id);
