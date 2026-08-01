@@ -34,8 +34,17 @@ const nextConfig = {
     // route, which for this catch-all is `/app/api/[[...route]]`. We can't key
     // on the literal path because its `[[...]]` are glob character-classes that
     // never match; `/api/**` matches the route without brackets.
+    //
+    // We glob two locations because the client's real path depends on how the
+    // environment resolves the pnpm store: the hoisted `.prisma/client` symlink
+    // target, and pnpm's actual virtual store (`.pnpm/@prisma+client@*/...`).
+    // A real Vercel runtime PrismaClientInitializationError searched exactly the
+    // latter and found nothing, so both are included to be robust to hoisting.
     outputFileTracingIncludes: {
-      '/api/**': ['../../node_modules/.prisma/client/**/*'],
+      '/api/**': [
+        '../../node_modules/.prisma/client/**/*',
+        '../../node_modules/.pnpm/@prisma+client@*/node_modules/.prisma/client/**/*',
+      ],
     },
   },
   images: {
