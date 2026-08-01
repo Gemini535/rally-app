@@ -23,6 +23,14 @@ const nextConfig = {
     NEXT_PUBLIC_API_URL: '/api',
   },
   experimental: {
+    // Keep Prisma OUT of the webpack bundle. When @prisma/client is bundled into
+    // the route chunk, Prisma's runtime engine lookup resolves relative to the
+    // bundled file location and process.cwd() (/var/task/apps/web) — neither of
+    // which is the real node_modules/.pnpm/.../.prisma/client where the engine
+    // lives, so it throws PrismaClientInitializationError even though the binary
+    // was traced into the bundle. Externalizing makes the client load from its
+    // actual node_modules path, whose __dirname sits next to the engine.
+    serverComponentsExternalPackages: ['@prisma/client', 'prisma'],
     // Next's file tracing can't detect Prisma's native query engine, so it gets
     // dropped from the serverless bundle → PrismaClientInitializationError at
     // runtime. pnpm hoists the generated client to the workspace root, so the
