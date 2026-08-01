@@ -51,12 +51,20 @@ function probeAnchor(anchor: string) {
 export function GET() {
   const cwd = process.cwd();
   const dirname = __dirname;
+  const parentOfCwd = join(cwd, '..');
   const payload = {
     note: 'temporary diagnostic — inspect Prisma client files present at runtime',
     runtime: { cwd, dirname, node: process.version, platform: process.platform, arch: process.arch },
-    // Report both anchors since we are not certain which matches the real
+    // Raw listing of cwd's parent so we can see everything sitting at that level,
+    // in case node_modules is not the only thing landing in the wrong place.
+    parentOfCwdContents: listDir(parentOfCwd),
+    // Report multiple anchors since we are not certain which matches the real
     // runtime location of node_modules in the serverless bundle.
-    anchors: { fromCwd: probeAnchor(cwd), fromDirname: probeAnchor(dirname) },
+    anchors: {
+      fromCwd: probeAnchor(cwd),
+      fromDirname: probeAnchor(dirname),
+      fromParentOfCwd: probeAnchor(parentOfCwd),
+    },
   };
   return new Response(JSON.stringify(payload, null, 2), {
     status: 200,
