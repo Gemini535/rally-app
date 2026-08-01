@@ -17,7 +17,7 @@ const MapCanvas = dynamicImport(() => import('@/components/map/map-canvas').then
 const chicago = { lat: 41.8781, lng: -87.6298 };
 type Filters = { indoor: boolean; free: boolean; lights: boolean };
 
-export default function MapHome() {
+export default function AppHome() {
   const router = useRouter(); const pathname = usePathname(); const params = useSearchParams();
   const sport = (params.get('sport') as SportSlug | null) ?? 'basketball'; const radius = Number(params.get('radius') ?? 5); const playable = params.get('playableNow') === 'true';
   const filters = { indoor: params.get('indoor') === 'true', free: params.get('free') === 'true', lights: params.get('lights') === 'true' };
