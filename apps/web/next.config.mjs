@@ -1,10 +1,15 @@
-import { readFileSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 
 // Local development keeps the shared demo credentials at the workspace root.
-for (const line of readFileSync(resolve(process.cwd(), '../../.env'), 'utf8').split(/\r?\n/)) {
-  const match = /^([A-Z0-9_]+)=(.*)$/.exec(line);
-  if (match && !process.env[match[1]]) process.env[match[1]] = match[2];
+// This file is gitignored and absent on hosted builds (e.g. Vercel), so skip it
+// when missing and rely on the platform-provided environment instead.
+const envPath = resolve(process.cwd(), '../../.env');
+if (existsSync(envPath)) {
+  for (const line of readFileSync(envPath, 'utf8').split(/\r?\n/)) {
+    const match = /^([A-Z0-9_]+)=(.*)$/.exec(line);
+    if (match && !process.env[match[1]]) process.env[match[1]] = match[2];
+  }
 }
 
 /** @type {import('next').NextConfig} */
@@ -16,6 +21,22 @@ const nextConfig = {
     NEXT_PUBLIC_SUPABASE_ANON_KEY: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
     // Browser requests use the Next adapter, preserving Supabase's cookie session.
     NEXT_PUBLIC_API_URL: '/api',
+  },
+  experimental: {
+    // Next's file tracing can't detect Prisma's native query engine, so it gets
+    // dropped from the serverless bundle → PrismaClientInitializationError at
+    // runtime. pnpm hoists the generated client to the workspace root, so the
+    // engine lives two levels up from this app. Globbing the whole client dir
+    // captures the platform-specific binary (libquery_engine-*.so.node on
+    // Vercel's Linux runtime) plus schema.prisma.
+    //
+    // The key is a picomatch glob (contains-match) against the normalized app
+    // route, which for this catch-all is `/app/api/[[...route]]`. We can't key
+    // on the literal path because its `[[...]]` are glob character-classes that
+    // never match; `/api/**` matches the route without brackets.
+    outputFileTracingIncludes: {
+      '/api/**': ['../../node_modules/.prisma/client/**/*'],
+    },
   },
   images: {
     remotePatterns: [

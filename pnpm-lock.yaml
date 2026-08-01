@@ -81,6 +81,9 @@ importers:
 
   apps/web:
     dependencies:
+      '@rally/db':
+        specifier: workspace:*
+        version: link:../../packages/db
       '@rally/shared':
         specifier: workspace:*
         version: link:../../packages/shared
