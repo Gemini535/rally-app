@@ -1,6 +1,6 @@
 {
   "installCommand": "pnpm install",
-  "buildCommand": "pnpm turbo run build --filter=web...",
+  "buildCommand": "cd ../.. && pnpm turbo run build --filter=web...",
   "outputDirectory": ".next",
   "framework": "nextjs",
   "functions": { "app/api/[[...route]]/route.ts": { "maxDuration": 30 } },
