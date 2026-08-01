@@ -52,18 +52,23 @@ export function GET() {
   const cwd = process.cwd();
   const dirname = __dirname;
   const parentOfCwd = join(cwd, '..');
+  // Two levels above cwd — expected to resolve to the Lambda root (/var/task).
+  const lambdaRoot = join(cwd, '..', '..');
   const payload = {
     note: 'temporary diagnostic — inspect Prisma client files present at runtime',
     runtime: { cwd, dirname, node: process.version, platform: process.platform, arch: process.arch },
     // Raw listing of cwd's parent so we can see everything sitting at that level,
     // in case node_modules is not the only thing landing in the wrong place.
     parentOfCwdContents: listDir(parentOfCwd),
+    // Raw listing of the Lambda root itself (node_modules, package.json, etc.).
+    lambdaRootContents: listDir(lambdaRoot),
     // Report multiple anchors since we are not certain which matches the real
     // runtime location of node_modules in the serverless bundle.
     anchors: {
       fromCwd: probeAnchor(cwd),
       fromDirname: probeAnchor(dirname),
       fromParentOfCwd: probeAnchor(parentOfCwd),
+      fromLambdaRoot: probeAnchor(lambdaRoot),
     },
   };
   return new Response(JSON.stringify(payload, null, 2), {
